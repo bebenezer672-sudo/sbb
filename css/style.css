@@ -2,301 +2,275 @@
 body {
     font-family: 'Epunda Slab', serif;
     font-weight: 300; 
-    margin: 0; /* Verwijdert standaardmarge van de pagina */
+    margin: 0; 
     padding: 0;
 }
 
 h1 {
     color: white;
-    font-weight: 100; 
     display: flex;
+    font-size: 120px;
+    font-weight: 100; 
     justify-content: center;
-    align-items: center;
-    font-size: 100px;
-    z-index: 1;  
     position: relative;
+    z-index: 1;  
+}
+
+/* --------- Buttons --------- */
+.btn-header {
+    background-color: #ffffff;
+    border: none;
+    padding: 10px 10px;
+}
+
+.btn-header:hover {
+    background-color: rgb(193, 223, 223);
+}
+
+.btn-navbar {
+    border: none;
+    color: rgb(255, 255, 255);
+    margin-left: 50px;
+    text-decoration: none;
+}
+
+.btn-navbar:hover {
+    color: #ccc;
+}
+
+.Explore {
+    background-color: #f1d88c;
+    border: none;
+    cursor: pointer;
+    margin-left: 150px;
+    margin-top: 45px;
+    padding: 10px 30px;
+    transition: background 0.3s;
+}
+
+.Explore:hover {
+    background-color: #938b8b;
+}
+
+.header-btn {
+    display: flex;
+    gap: 20px;
+    position: fixed;
+    right: 18px;
+}
+
+.Menu {
+    background-color: #f1d88c;
+    border: none;
+    padding: 10px 30px;
+}
+
+.Menu:hover {
+    background-color: rgb(168, 173, 175);
+}
+
+.nav-btn {
+    display: flex;
+    gap: 70px;
+    position: fixed;
+    top: 20px;
+    z-index: 5;
 }
 
 /* --------- Header & Image --------- */
 .header-img {
+    filter: brightness(70%);
+    height: 100vh;
+    left: 50%;
+    object-fit: cover;
     position: absolute;
     top: 0;
-    left: 50%;
     transform: translateX(-50%);
     width: 100%;
-    height: 100vh;
-    object-fit: cover;
     z-index: -2;
-    filter: brightness(70%); /* maakt afbeelding donkerder voor contrast */
 }
 
-/* Optionele overlay (extra bescherming voor leesbaarheid) */
 .header-img::after {
+    background: rgba(0,0,0,0.3);
     content: "";
+    height: 100%;
+    left: 0;
     position: absolute;
     top: 0;
-    left: 0;
     width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.3);
     z-index: -1;
 }
 
-/* --------- Buttons --------- */
-.Explore{
-    margin-top: 50px;
-    margin-left: 400px;
-    background-color: #e9e763;
-    padding: 15px 40px;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-.Explore:hover{
-    background-color: #938b8b;
-}
-
-.btn-navbar{
-    color: rgb(255, 255, 255);
-    border: none;
-    text-decoration: none;
-    margin-left: 50px;
-}
-
-.btn-header{
-    position: fixed;
-    z-index: 5;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
-    color: rgb(0, 0, 0);
-    display: flex;
-    border: none;
-    padding: 10px 25px;
-    border-radius: 4%;
-    background-color: #e5e5e5;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-.btn-header:hover{
-    background-color: rgb(193, 223, 223);
-}
-
-.nav-btn{
-    position: fixed;
-    z-index: 5;
-}
-
-.header-btn{
-    display: flex;
-    justify-content: flex-end;
-    top: auto;
-}
-
-.Menu{
-    position: fixed;
-    z-index: 5;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
-    color: white;
-    display: flex;
-    margin-right: 160px;
-    border: none;
-    padding: 10px 25px;
-    border-radius: 4%;
-    background-color: #f0c012;
-    cursor: pointer;
-    transition: background 0.3s;
-   
-}
-
-.Menu:hover{
-    background-color: rgb(168, 173, 175);
-}
-
-
-.subtitle-text{
-    color: aliceblue;
-    position: relative;
-    z-index: 1;
-    margin-left: 50px;
-    margin-top: 250px;
-    font-size: 17px;
-    text-shadow: 2px 2px 6px rgba(0,0,0,0.7); 
-    line-height: 1.5;
-}
-
-
-.our-story-text{
-    background-color: #243231;
-    color: white;
-    height: 800px;
-    margin-top: 172px;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 50px 20px;
-
-}
-
-.our-story-text-p{
-    display: flex;
-    justify-content: flex-end;
-}
-
-.title-ourStory{
-    display: flex;
-    margin-left: 940px;
-}
-
-
-.video-div{
-    display: flex;
-    margin-right: auto;
-    margin-top: 200px;
-    padding: 20px 140px;
+/* --------- Logo & Navigation --------- */
+.logo {
     background-color: aqua;
-   
-    
-
-}
-.video-cake{
-      width: 200px;
-      height: 12;
-    border-radius: 20px;
-    display: block;
-    margin-left: auto;
-
+    justify-content: center;
 }
 
+.logo img {
+    border-radius: 50px;
+    height: 50px;
+    margin-top: auto;
+    position: fixed;
+    z-index: 1;
+}
 
-/* --------- Menu Cards --------- */
+.nav-container {
+    align-items: center;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    position: relative; 
+}
+
+/* --------- Menu Card --------- */
 .menu-card {
-    position: absolute;
-    top: 500px;
-    right: 100px;
-    width: 150px;
-    background: #fff;
+    background: #ffffff;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    text-align: center;
-    padding: 30px 10px;
-    font-family: Arial, sans-serif;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
     cursor: pointer;
+    font-family: Arial, sans-serif;
+    padding: 30px 10px;
+    position: absolute;
+    right: 100px;
+    text-align: center;
+    top: 500px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    width: 150px;
     z-index: 1;
 }
 
 .menu-card:hover {
-    transform: translateY(-3px);
     box-shadow: 0 6px 15px rgba(0,0,0,0.15);
-}
-
-.menu-icon img {
-    width: 124px;
-    height: 125px;
-    object-fit: contain;
-}
-
-.menu-title {
-    font-size: 48px;
-    font-weight: bold;
-    margin: 10px 0;
-    font-family: "Brush Script MT", cursive;
-    color: #6b3e0a;
+    transform: translateY(-3px);
 }
 
 .menu-footer {
-    font-size: 14px;
+    align-items: center;
     color: #333;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    font-size: 14px;
     gap: 6px;
+    justify-content: center;
+}
+
+.menu-icon img {
+    display: flex;
+    height: 130px;
+    margin-left: 20px;
+    object-fit: contain;
+    width: 140px;
+}
+
+.menu-title {
+    color: #6b3e0a;
+    font-family: "Brush Script MT", cursive;
+    font-size: 48px;
+    font-weight: bold;
+    margin: 10px 0;
 }
 
 .arrow {
     font-size: 16px;
 }
 
+/* --------- Our Story Section --------- */
+.image-bakker {
+    border-radius: 15px;
+    width: 150px;
+}
+
+.image-bakker-div {
+}
+
+.our-story-text {
+    background-color: #37533e;
+    box-sizing: border-box;
+    color: white;
+    height: 900px;
+    margin-top: 146px;
+    padding: 50px 20px;
+    width: 100%;
+}
+
+.our-story-text-p {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.image-ourStory-div{
+    display: flex;
+    justify-content: flex-end;
+}
+.image-ourStory{
+    border-radius: 50px;
+   padding: 20px 200px;
+   
+}
+.subtitle-text {
+    color: aliceblue;
+    font-size: 17px;
+    line-height: 1.5;
+    margin-left: 50px;
+    margin-top: 250px;
+    position: relative;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.7); 
+    z-index: 1;
+}
+
+.title-ourStory {
+    display: flex;
+    margin-left: 940px;
+}
+
+/* --------- Video Section --------- */
+.video-cake {
+    border-radius: 20px;
+    display: block;
+    height: 12;
+    margin-left: auto;
+    width: 200px;
+}
+
+.video-div {
+    background-color: aqua;
+    display: flex;
+    margin-right: auto;
+    margin-top: 200px;
+    padding: 20px 140px;
+}
+
 /* --------- Responsive --------- */
 @media screen and (max-width: 1024px){
-    .subtitle-text{
+    .Explore {
+        margin-left: 50px;
+        padding: 10px 25px;
+    }
+
+    .menu-card {
+        right: 20px;
+        top: 600px;
+    }
+
+    .subtitle-text {
         font-size: 15px;
         margin-left: 30px;
         margin-top: 200px;
     }
 
-    .title-ourStory{
+    .title-ourStory {
         margin-left: auto;
-    }
-
-    .Explore{
-        margin-left: 50px;
-        padding: 10px 25px;
-    }
-
-    .menu-card{
-        top: 600px;
-        right: 20px;
     }
 }
 
 @media screen and (max-width: 768px){
-    h1{
+    h1 {
         font-size: 60px;
     }
 
-    .subtitle-text{
+    .subtitle-text {
         font-size: 14px;
         margin-left: 20px;
         margin-top: 150px;
     }
-
-    .Explore{
-        margin-left: 20px;
-        padding: 8px 20px;
-    }
-}
-
-
-.image-bakker-div{
-    display: flex;
-    justify-content: center;
-   top: 10000;
-}
-
-.nav-container {
-  position: relative; 
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 30px;
-  background: transparent;
-  z-index: 10; 
-}
-
-.logo img {
-  height: 50px;
-  border-radius: 50px;
-  margin-top: auto;
-  z-index: 10;
-  position: fixed;
-}
-
-.nav-btn {
-  display: flex;
-  gap: 70px;
-  
-}
-
-.btn-navbar {
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s;
-}
-
-.btn-navbar:hover {
-  color: #ccc;
 }
