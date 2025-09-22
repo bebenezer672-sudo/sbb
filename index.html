@@ -4,24 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bristo Bakery</title>
-
-  <!-- Correct font (Roboto Slab als voorbeeld) -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+  <div class="header-container"></div>
+
   <header>
     <div class="logo">
-
-    
-      <img src="image/ChatGPT Image 11 sep 2025, 15_38_53.png" 
+      <img src="image/logo_transparent_white.png" 
            alt="Bristo Bakery logo" 
            class="logo-img">
-   </div>
+    </div>
 
     <nav class="nav-container">
-      <div class="nav-btn">
+      <div>
         <a href="#home" class="btn-navbar">Home</a>
         <a href="#chef" class="btn-navbar">Chef</a>
         <a href="#gallery" class="btn-navbar">Gallery</a>
@@ -29,13 +26,15 @@
     </nav>
 
     <section class="header-btn">
-      <button class="Menu">Menu</button>
+      <button class="Menu"><strong>Menu</strong></button>
       <button class="btn-header">Contact Us</button>
     </section>
 
     <section class="title-section">
       <h1>Bristo | Bakery</h1>
-      <img src="image/front-view-delicious-chocolate-concept.jpg" class="header-img" alt="Chocoladetaart">
+      <img src="image/front-view-delicious-chocolate-concept.jpg" 
+           class="header-img" 
+           alt="Chocoladetaart">
     </section>
         
     <p class="subtitle-text">
@@ -52,6 +51,7 @@
     <div class="menu-icon">
       <img src="image/Schermafbeelding 2025-09-11 111143.png" alt="Menu Icon">
     </div>
+
     <h2 class="menu-title">Menu</h2>
     <footer class="menu-footer">
       <span>Open menu</span>
@@ -61,39 +61,80 @@
 
   <main>  
     <section class="our-story-text">
-      <h2><strong class="title-ourStory">Our Story</strong></h2>
-       <div>
-        <img src="image/baker-holding-metal-tray-full-fresh-croissants-illuminated-with-lovely-light-from-window-ai-generative.jpg" alt="" width="250px">
+      <div class="our-story-row">
+        <div class="image-ourStory-croissant-div">
+          <img src="image/baker-holding-metal-tray-full-fresh-croissants.jpg" 
+               alt="Croissants" 
+               width="250" 
+               class="image-ourStory-croissant">
+        </div>
+
+        <div class="image-man">
+          <img src="image/afbeelding.png" alt="Bakker">
+        </div>
+
+        <div class="our-story-flex-content">
+          <h2><strong class="title-ourStory">Our Story</strong></h2>
+          <p class="our-story-text-p"> 
+            Het begon allemaal met een droom en de liefde voor de geur van versgebakken brood. <br>
+            Al generaties lang staat onze familie elke ochtend vroeg in de bakkerij om met zorg en vakmanschap <br>
+            het lekkerste brood en gebak te maken. <br>
+            Wat ooit klein begon met een traditionele oven en een handvol recepten, <br>
+            is uitgegroeid tot een plek waar klanten samenkomen om te genieten van <br>
+            ambacht, kwaliteit en warmte. <br>
+            Onze passie is niet alleen bakken, maar ook het creëren van momenten van geluk bij iedere hap. <br>
+          </p>
+          <button class="Explore-ourStory">Explore More</button>
+        </div>
       </div>
-     
-      <p class="our-story-text-p"> 
-        Het begon allemaal met een droom en de liefde voor de geur van versgebakken brood. <br>
-        Al generaties lang staat onze familie elke ochtend vroeg in de <br>
-        bakkerij om met zorg en vakmanschap <br>
-        het lekkerste brood en gebak te maken. <br>
-        Wat ooit klein begon met een traditionele oven en een handvol recepten, <br>
-        is uitgegroeid tot een plek waar klanten samenkomen om te genieten van <br>
-        ambacht, kwaliteit en warmte. <br>
-        Onze passie is niet alleen bakken, maar ook het creëren van <br>
-        momenten van geluk bij iedere hap. <br>
-      </p>
+
       <div class="image-ourStory-div">
-        <img src="image/coffee_transparent.png" alt="" class="image-ourStory" width="300px">
+        <img src="image/coffee-cup.svg" 
+             alt="Coffee Icon" 
+             class="image-ourStory" 
+             width="400">
+      </div>
+    </section>
+
+    <h2 class="title-dine">Why dine with us</h2>
+    <div class="croissants-trans-div">
+      <img src="image/croissant.svg" alt="Croissant" class="croissants-trans">
+    </div>
+    
+    <section class="dine-section">
+      <div class="dine-cards">
+        <div class="dine-card">
+          <img src="image/eten.png" alt="Coffee">
+          <h3>Fresh, Local Ingredients</h3>
+          <p>Explore More</p>
+        </div>
+
+        <div class="dine-card">
+          <img src="image/sterrenpersoon.png" alt="Craft">
+          <h3>Artisan Craftsmanship</h3>
+          <p>Explore More</p>
+        </div>
+
+        <div class="dine-card">
+          <img src="image/rainbow.png" alt="Atmosphere">
+          <h3>Inviting Atmosphere</h3>
+          <p>Explore More</p>
+        </div>
+
+        <div class="dine-card">
+          <img src="image/mensen.png" alt="Community">
+          <h3>Community-Oriented</h3>
+          <p>Explore More</p>
+        </div>
       </div>
 
-     
+      <div class="dine-video">
+        <video src="video/ezgif-612dc4c36965d7.mp4" loop autoplay muted></video>
+      </div>
     </section>
-     <h2>
-      why dine with us
-     </h2>     
-      
 
-    <section class="video-div">
-      <video src="video/3119255-uhd_3840_2160_25fps.mp4" loop autoplay muted class="video-cake"></video>
-    </section>
- 
-    <section class="customers-favourite card glow-text">
-      <h2>Our Customers’ Favourite</h2>
+    <h2 class="tilte-customers-favourite">Our Customers’ Favourite</h2>
+    <section class="customers-favourite-card-glow-text">
       <p>
         Iedere dag hebben we één topper die keer op keer gekozen wordt door onze klanten. <br>
         Of het nu gaat om onze knapperige croissants, <br>
@@ -101,41 +142,96 @@
         deze klassiekers blijven absolute favorieten. <br>
         Onze klanten noemen het de perfecte combinatie <br>
         van ambacht, smaak en liefde voor het vak. <br>
-        Kom zelf proeven en ontdek <br>
-        waarom dit de favorieten van velen zijn!
+        Kom zelf proeven en ontdek waarom dit de favorieten van velen zijn!
       </p>
+      <img src="image/pancakes.svg" alt="Pancakes" class="pancakes-img">
+    </section>
+
+    <section class="customers-favourite-section">
+      <div class="customers-favourite-images">
+        <img src="image/file.jpg" alt="Croissants">
+        <h3>Croissants Loaf French Toast</h3>
+      </div>
+
+      <div class="customers-favourite-images">
+        <img src="image/maak-iemand-super-blij-met-een-ontbijtverrassing-282856.webp" alt="Ontbijt">
+        <h3>Croissants Loaf French Toast</h3>
+      </div>
+
+      <div class="customers-favourite-images">
+        <img src="image/images (1).jpg" alt="Scramble">
+        <h3>Smoked Salmon Scramble</h3>
+      </div>
+
+      <div class="customers-favourite-images">
+        <img src="image/brioche-french-toast-9.jpg" alt="Pancakes">
+        <h3>Pastelito Pancakes</h3>
+      </div>
     </section>
   </main>
 
   <footer>
     <section class="footer-container">
-      <article class="footer-about glow-text">
-        <h3>About Bristo Bakkery</h3>
-        <p>
+      <div class="footer-text">
+        <h3 class="tilte-footer">Subscribe to <br> our newsletter</h3>
+        <p class="p-footer">
           Bij Bristo Bakkery draait alles om ambacht, smaak en passie. <br>
           Al generaties lang bakken wij brood en gebak met liefde en vakmanschap. <br>
           Kom langs en proef het zelf!
         </p>
-      </article>
 
-      <article class="footer-contact glow-text">
-        <h3>Contact</h3>
-        <p>Email: info@bristobakkery.com</p>
-        <p>Telefoon: +31 123 456 789</p>
-        <p>Adres: Bakkerstraat 10, 1234 AB Amsterdam</p>
-      </article>
+        <div class="footer-subscribe-container">
+          <form class="subscribe-form">
+            <input type="email" class="subscribe-input" placeholder="Email" required>
+            <button type="submit" class="subscribe-btn">Subscribe</button>
+          </form>
+        </div>
+      </div>
 
-      <article class="footer-hours glow-text">
-        <h3>Openingstijden</h3>
-        <p>Ma - Vr: 07:00 - 18:00</p>
-        <p>Za: 08:00 - 16:00</p>
-        <p>Zo: Gesloten</p>
-      </article>
+      <div class="contant-info">
+        <div class="info-footer"> 
+          <address> 
+            <img src="image/logo_transparent_black.png" alt="Logo" class="logo-footer">
+            <h4>Contact</h4>
+            <div class="contact-info"> 
+              <p>Email: info@bristobakkery.com</p>
+              <p>Telefoon: +31 123 456 789</p>
+              <p>Adres: Bakkerstraat 10, 1234 AB Amsterdam</p>
+            </div>
+          </address>
 
-      <article class="footer-social glow-text">
-        <h3>Volg ons</h3>
-        <!-- hier kun je social icons zetten -->
-      </article>
+          <div>
+            <h4>Menu</h4>
+            <ul>
+              <li><a class="info-btn" href="Home">Home</a></li>
+              <li><a class="info-btn" href="About">About</a></li>
+              <li><a class="info-btn" href="Gallery">Gallery</a></li>
+              <li><a class="info-btn" href="News">News</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a class="info-btn" href="#">Menu</a></li>
+              <li><a class="info-btn" href="#">Opportunities</a></li>
+              <li><a class="info-btn" href="#">Privacy Policy</a></li>
+              <li><a class="info-btn" href="#">Location & Contact</a></li>
+            </ul>
+          </div>
+             
+          <div>
+            <h4>Openingstijden</h4>
+            <article class="footer-hours">
+              <p>Ma - Vr: 07:00 - 18:00</p>
+              <p>Za: 08:00 - 16:00</p>
+              <p>Zo: Gesloten</p>
+              <p><strong>You need a consult</strong></p>
+              <p>+(123) 1800-567-8990</p>
+            </article>
+          </div>
+        </div>
+      </div>
     </section>
 
     <div class="footer">
