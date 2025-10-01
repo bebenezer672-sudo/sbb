@@ -1,0 +1,9 @@
+li {
+    list-style: none;
+   
+} 
+
+li a {
+    text-decoration: none;
+    font-size: 22px;
+}
