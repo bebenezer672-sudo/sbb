@@ -1,0 +1,511 @@
+/* Why Dine With Us Section */
+
+/* Header Section */
+.dine-header {
+  text-align: center;
+  padding: 65px 6% 42px;
+  background: linear-gradient(135deg, rgba(241, 216, 140, 0.08) 0%, rgba(241, 216, 140, 0.02) 100%);
+}
+
+.title-dine {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 18px;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+}
+
+.dine-subtitle {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 1.06rem;
+  line-height: 1.72;
+  color: rgba(34, 34, 34, 0.78);
+  margin: 0;
+  letter-spacing: 0.3px;
+}
+
+/* Main Dine Section */
+.dine-section {
+  padding: 68px 6% 78px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.95) 0%, rgba(248, 248, 248, 0.92) 100%);
+  position: relative;
+  margin-left: 120px;
+}
+
+.dine-content {
+  display: flex;
+  gap: 24px;
+  align-items: stretch;
+  max-width: 1520px;
+  margin: 0 auto;
+}
+
+/* Cards Section */
+.dine-cards {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  flex: 1;
+  align-items: stretch;
+}
+
+.dine-card {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 48px 32px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.09);
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(241, 216, 140, 0.25);
+  position: relative;
+  overflow: hidden;
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.dine-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, #f1d88c 0%, #e8cc7a 100%);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dine-card:hover::before {
+  transform: scaleX(1);
+}
+
+.dine-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 42px rgba(241, 216, 140, 0.32);
+  border-color: rgba(241, 216, 140, 0.55);
+}
+
+.dine-card img {
+  width: 108px;
+  height: 108px;
+  object-fit: contain;
+  margin: 0 auto 28px;
+}
+
+.dine-card:hover img {
+  transform: scale(1.12) rotate(3deg);
+}
+
+.dine-card h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.24rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 22px;
+  line-height: 1.45;
+  letter-spacing: 0.5px;
+}
+
+.explore-link {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #f1d88c;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-block;
+  position: relative;
+  padding: 4px 0;
+}
+
+.explore-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #f1d88c;
+  transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.explore-link:hover {
+  color: #e8cc7a;
+  transform: translateX(5px);
+}
+
+.explore-link:hover::after {
+  width: calc(100% - 25px);
+}
+
+/* Video Section */
+.dine-video {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 12px 42px rgba(0, 0, 0, 0.18);
+  position: relative;
+  flex: 0 0 280px;
+  align-self: stretch;
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.35s ease;
+}
+
+.dine-video:hover {
+  transform: scale(1.02);
+  box-shadow: 0 16px 52px rgba(0, 0, 0, 0.22);
+}
+
+.dine-video::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(241, 216, 140, 0.06) 0%, transparent 50%, rgba(0, 0, 0, 0.08) 100%);
+  pointer-events: none;
+  z-index: 1;
+  transition: opacity 0.35s ease;
+}
+
+.dine-video:hover::before {
+  opacity: 0.6;
+}
+
+.dine-video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Customers Favourite Section */
+.tilte-customers-favourite {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #222;
+  text-align: center;
+  margin: 72px 0 38px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+.customers-favourite-card-glow-text {
+  background: linear-gradient(135deg, rgba(241, 216, 140, 0.12) 0%, rgba(241, 216, 140, 0.05) 100%);
+  padding: 68px 6%;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 65px;
+}
+
+.customers-favourite-card-glow-text p {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 1.08rem;
+  line-height: 1.92;
+  color: rgba(34, 34, 34, 0.82);
+  max-width: 785px;
+  margin: 0 auto;
+  letter-spacing: 0.3px;
+  position: relative;
+  z-index: 2;
+}
+
+.pancakes-img,
+.coffee-img {
+  position: absolute;
+  opacity: 0.08;
+  pointer-events: none;
+  filter: drop-shadow(0 0 22px rgba(241, 216, 140, 0.18));
+}
+
+.pancakes-img {
+  width: 245px;
+  height: 245px;
+  bottom: -45px;
+  left: -35px;
+  transform: rotate(-18deg);
+}
+
+.coffee-img {
+  width: 185px;
+  height: 185px;
+  top: -28px;
+  right: -22px;
+  transform: rotate(22deg);
+}
+
+/* Responsive Design */
+@media (max-width: 1400px) {
+  .dine-content {
+    gap: 18px;
+  }
+  
+  .dine-cards {
+    gap: 16px;
+  }
+  
+  .dine-card {
+    padding: 42px 26px;
+  }
+  
+  .dine-card img {
+    width: 95px;
+    height: 95px;
+  }
+  
+  .dine-card h3 {
+    font-size: 1.15rem;
+  }
+  
+  .dine-video {
+    flex: 0 0 260px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .dine-content {
+    gap: 16px;
+  }
+  
+  .dine-cards {
+    gap: 14px;
+  }
+  
+  .dine-card {
+    padding: 36px 20px;
+  }
+  
+  .dine-card img {
+    width: 82px;
+    height: 82px;
+    margin-bottom: 20px;
+  }
+  
+  .dine-card h3 {
+    font-size: 1.05rem;
+    margin-bottom: 16px;
+  }
+  
+  .explore-link {
+    font-size: 0.82rem;
+  }
+  
+  .dine-video {
+    flex: 0 0 240px;
+  }
+  
+  .title-dine {
+    font-size: 2.1rem;
+  }
+  
+  .tilte-customers-favourite {
+    font-size: 1.95rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .dine-content {
+    flex-direction: column;
+    gap: 35px;
+  }
+  
+  .dine-cards {
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+  
+  .dine-card {
+    flex: 1 1 calc(50% - 9px);
+    min-width: 220px;
+    padding: 38px 24px;
+  }
+  
+  .dine-card img {
+    width: 88px;
+    height: 88px;
+  }
+  
+  .dine-card h3 {
+    font-size: 1.12rem;
+  }
+  
+  .dine-video {
+    flex: 1 1 auto;
+    max-width: 100%;
+    min-height: 380px;
+  }
+  
+  .title-dine {
+    font-size: 1.95rem;
+  }
+  
+  .tilte-customers-favourite {
+    font-size: 1.82rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .dine-header {
+    padding: 52px 5% 35px;
+  }
+  
+  .title-dine {
+    font-size: 1.68rem;
+    margin-bottom: 14px;
+  }
+  
+  .dine-subtitle {
+    font-size: 0.96rem;
+  }
+  
+  .dine-section {
+    padding: 52px 5% 62px;
+  }
+  
+  .dine-cards {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .dine-card {
+    flex: 1 1 auto;
+    min-width: 100%;
+    padding: 32px 22px;
+  }
+  
+  .dine-card img {
+    width: 78px;
+    height: 78px;
+  }
+  
+  .dine-card h3 {
+    font-size: 1.02rem;
+  }
+  
+  .explore-link {
+    font-size: 0.86rem;
+  }
+  
+  .dine-video {
+    min-height: 320px;
+  }
+  
+  .tilte-customers-favourite {
+    font-size: 1.72rem;
+    margin: 58px 0 32px;
+  }
+  
+  .customers-favourite-card-glow-text {
+    padding: 52px 5%;
+  }
+  
+  .customers-favourite-card-glow-text p {
+    font-size: 0.98rem;
+    line-height: 1.78;
+  }
+  
+  .pancakes-img {
+    width: 185px;
+    height: 185px;
+    bottom: -32px;
+    left: -25px;
+  }
+  
+  .coffee-img {
+    width: 145px;
+    height: 145px;
+    top: -18px;
+    right: -15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .dine-header {
+    padding: 42px 4% 28px;
+  }
+  
+  .title-dine {
+    font-size: 1.38rem;
+    letter-spacing: 0.8px;
+  }
+  
+  .dine-subtitle {
+    font-size: 0.86rem;
+  }
+  
+  .dine-subtitle br {
+    display: none;
+  }
+  
+  .dine-section {
+    padding: 42px 4% 48px;
+  }
+  
+  .dine-cards {
+    gap: 16px;
+  }
+  
+  .dine-card {
+    padding: 26px 18px;
+  }
+  
+  .dine-card img {
+    width: 68px;
+    height: 68px;
+    margin-bottom: 18px;
+  }
+  
+  .dine-card h3 {
+    font-size: 0.96rem;
+    margin-bottom: 14px;
+  }
+  
+  .explore-link {
+    font-size: 0.82rem;
+  }
+  
+  .dine-video {
+    min-height: 260px;
+    border-radius: 14px;
+  }
+  
+  .tilte-customers-favourite {
+    font-size: 1.42rem;
+    margin: 46px 0 24px;
+  }
+  
+  .customers-favourite-card-glow-text {
+    padding: 42px 4%;
+    margin-bottom: 52px;
+  }
+  
+  .customers-favourite-card-glow-text p {
+    font-size: 0.88rem;
+    line-height: 1.68;
+  }
+  
+  .customers-favourite-card-glow-text p br {
+    display: none;
+  }
+  
+  .pancakes-img {
+    width: 135px;
+    height: 135px;
+    bottom: -22px;
+    left: -18px;
+  }
+  
+  .coffee-img {
+    width: 105px;
+    height: 105px;
+    top: -12px;
+    right: -10px;
+  }
+}
