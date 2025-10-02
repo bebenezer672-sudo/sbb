@@ -31,16 +31,6 @@
   align-items: start;
 }
 
-.hero-text-container {
-  background: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(7px);
-  padding: 97px 25px;
-  border-radius: 9px;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.22);
-  margin-left: -64px;
-  max-width: 459px;
-}
 
 .subtitle-text {
   color: white;
