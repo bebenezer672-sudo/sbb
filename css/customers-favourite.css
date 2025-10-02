@@ -1,0 +1,286 @@
+/* Customers Favourite Section */
+
+/* Wrapper to contain all customers favourite content */
+.customers-favourite-wrapper {
+  background: linear-gradient(135deg, rgba(168, 172, 178, 0.94) 0%, rgba(148, 152, 158, 0.92) 100%);
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+/* Title styling */
+.tilte-customers-favourite {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #222;
+  text-align: center;
+  margin: 0 0 18px 0;
+  letter-spacing: 0.8px;
+  text-transform: capitalize;
+}
+
+/* Header section with decorative text and icons */
+.customers-favourite-card-glow-text {
+  padding: 72px 6% 32px;
+  text-align: center;
+  position: relative;
+  overflow: visible;
+}
+
+.customers-favourite-card-glow-text p {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 1.02rem;
+  line-height: 1.85;
+  color: rgba(34, 34, 34, 0.72);
+  max-width: 825px;
+  margin: 0 auto;
+  letter-spacing: 0.2px;
+  position: relative;
+  z-index: 2;
+}
+
+/* Decorative coffee/pancake icons */
+.pancakes-img,
+.coffee-img {
+  position: absolute;
+  opacity: 0.15;
+  pointer-events: none;
+  filter: grayscale(20%) drop-shadow(0 0 18px rgba(241, 216, 140, 0.15));
+}
+
+.pancakes-img {
+  width: 188px;
+  height: 188px;
+  bottom: 15%;
+  left: 3%;
+  transform: rotate(-12deg);
+}
+
+.coffee-img {
+  width: 168px;
+  height: 168px;
+  top: 20%;
+  right: 3%;
+  transform: rotate(15deg);
+}
+
+/* Section with images grid */
+.customers-favourite-section {
+  padding: 48px 6% 72px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+  max-width: 1520px;
+  margin: 0 auto;
+}
+
+.customers-favourite-images {
+  position: relative;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12);
+  transition: all 0.38s cubic-bezier(0.4, 0, 0.2, 1);
+  background: #fff;
+}
+
+.customers-favourite-images:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 16px 45px rgba(241, 216, 140, 0.35);
+}
+
+.customers-favourite-images img {
+  width: 100%;
+  height: 285px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.38s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.customers-favourite-images:hover img {
+  transform: scale(1.08);
+}
+
+.customers-favourite-images h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.08rem;
+  font-weight: 600;
+  color: #222;
+  padding: 22px 18px;
+  margin: 0;
+  text-align: center;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.98) 0%, rgba(248, 248, 248, 0.95) 100%);
+  letter-spacing: 0.4px;
+  line-height: 1.48;
+  transition: color 0.3s ease;
+}
+
+.customers-favourite-images:hover h3 {
+  color: #f1d88c;
+}
+
+/* Responsive Design */
+@media (max-width: 1400px) {
+  .customers-favourite-section {
+    gap: 24px;
+  }
+  
+  .customers-favourite-images img {
+    height: 270px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .tilte-customers-favourite {
+    font-size: 2.4rem;
+    padding: 62px 5% 0;
+  }
+  
+  .customers-favourite-card-glow-text {
+    padding: 28px 5% 58px;
+  }
+  
+  .customers-favourite-card-glow-text p {
+    font-size: 0.96rem;
+  }
+  
+  .pancakes-img {
+    width: 158px;
+    height: 158px;
+    left: 2%;
+  }
+  
+  .coffee-img {
+    width: 142px;
+    height: 142px;
+    right: 2%;
+  }
+  
+  .customers-favourite-section {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    padding: 0 5% 65px;
+  }
+  
+  .customers-favourite-images img {
+    height: 260px;
+  }
+  
+  .customers-favourite-images h3 {
+    font-size: 1.02rem;
+    padding: 20px 16px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .customers-favourite-section {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+  }
+  
+  .customers-favourite-images img {
+    height: 280px;
+  }
+}
+
+@media (max-width: 768px) {
+  .tilte-customers-favourite {
+    font-size: 2.1rem;
+    padding: 52px 5% 0;
+  }
+  
+  .customers-favourite-card-glow-text {
+    padding: 24px 5% 48px;
+  }
+  
+  .customers-favourite-card-glow-text p {
+    font-size: 0.92rem;
+    line-height: 1.72;
+  }
+  
+  .pancakes-img {
+    width: 128px;
+    height: 128px;
+    opacity: 0.1;
+  }
+  
+  .coffee-img {
+    width: 115px;
+    height: 115px;
+    opacity: 0.1;
+  }
+  
+  .customers-favourite-section {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 5% 58px;
+  }
+  
+  .customers-favourite-images img {
+    height: 260px;
+  }
+  
+  .customers-favourite-images h3 {
+    font-size: 0.98rem;
+    padding: 18px 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tilte-customers-favourite {
+    font-size: 1.62rem;
+    padding: 42px 4% 0;
+    letter-spacing: 0.5px;
+  }
+  
+  .customers-favourite-card-glow-text {
+    padding: 20px 4% 38px;
+  }
+  
+  .customers-favourite-card-glow-text p {
+    font-size: 0.86rem;
+    line-height: 1.65;
+  }
+  
+  .customers-favourite-card-glow-text p br {
+    display: none;
+  }
+  
+  .pancakes-img {
+    width: 92px;
+    height: 92px;
+    opacity: 0.08;
+    left: 0.5%;
+  }
+  
+  .coffee-img {
+    width: 82px;
+    height: 82px;
+    opacity: 0.08;
+    right: 0.5%;
+  }
+  
+  .customers-favourite-section {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    padding: 0 4% 48px;
+  }
+  
+  .customers-favourite-images {
+    border-radius: 14px;
+  }
+  
+  .customers-favourite-images img {
+    height: 220px;
+  }
+  
+  .customers-favourite-images h3 {
+    font-size: 0.90rem;
+    padding: 16px 12px;
+  }
+  
+  .customers-favourite-images:hover {
+    transform: translateY(-6px) scale(1.02);
+  }
+}
+

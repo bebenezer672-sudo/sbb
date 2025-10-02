@@ -2,3 +2,332 @@
    Footer Component
    ========================================================================== */
 
+/* Main Footer */
+footer {
+  background: linear-gradient(135deg, #222 0%, #1a1a1a 100%);
+  color: rgba(255, 255, 255, 0.88);
+  padding: 68px 0 0;
+  position: relative;
+}
+
+/* Footer Container */
+.footer-container {
+  max-width: 1520px;
+  margin: 0 auto;
+  padding: 0 6%;
+}
+
+/* Newsletter Section */
+.footer-text {
+  text-align: center;
+  margin-bottom: 65px;
+  padding-bottom: 52px;
+  border-bottom: 1px solid rgba(241, 216, 140, 0.18);
+}
+
+.tilte-footer {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #f1d88c;
+  margin: 0 0 22px 0;
+  letter-spacing: 0.8px;
+  line-height: 1.35;
+}
+
+.p-footer {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 1.02rem;
+  line-height: 1.82;
+  color: rgba(255, 255, 255, 0.72);
+  margin: 0 0 35px 0;
+  letter-spacing: 0.3px;
+}
+
+/* Subscribe Form */
+.footer-subscribe-container {
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.subscribe-form {
+  display: flex;
+  gap: 12px;
+  align-items: stretch;
+}
+
+.subscribe-input {
+  flex: 1;
+  padding: 16px 22px;
+  border: 2px solid rgba(241, 216, 140, 0.28);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 0.96rem;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.subscribe-input::placeholder {
+  color: rgba(255, 255, 255, 0.48);
+}
+
+.subscribe-input:focus {
+  border-color: #f1d88c;
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 0 0 3px rgba(241, 216, 140, 0.15);
+}
+
+.subscribe-btn {
+  padding: 16px 38px;
+  background: #f1d88c;
+  color: #222;
+  border: none;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.02rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.subscribe-btn:hover {
+  background: #e8cc7a;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(241, 216, 140, 0.35);
+}
+
+/* Contact Info Section */
+.contant-info {
+  padding: 48px 0 58px;
+}
+
+.info-footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 42px;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-section h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.18rem;
+  font-weight: 600;
+  color: #f1d88c;
+  margin: 0 0 22px 0;
+  letter-spacing: 0.5px;
+}
+
+.footer-section address {
+  font-style: normal;
+}
+
+.logo-footer {
+  width: 145px;
+  height: auto;
+  margin-bottom: 18px;
+  filter: brightness(0) invert(1);
+}
+
+.contact-info p {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 0.92rem;
+  line-height: 1.85;
+  color: rgba(255, 255, 255, 0.75);
+  margin: 0 0 8px 0;
+}
+
+/* Footer Links */
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 12px;
+}
+
+.info-btn {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 0.92rem;
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+  position: relative;
+  padding-left: 0;
+}
+
+.info-btn::before {
+  content: '→';
+  position: absolute;
+  left: -18px;
+  opacity: 0;
+  transition: all 0.3s ease;
+  color: #f1d88c;
+}
+
+.info-btn:hover {
+  color: #f1d88c;
+  padding-left: 18px;
+}
+
+.info-btn:hover::before {
+  opacity: 1;
+  left: 0;
+}
+
+/* Opening Hours */
+.footer-hours p {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 0.92rem;
+  line-height: 1.85;
+  color: rgba(255, 255, 255, 0.75);
+  margin: 0 0 8px 0;
+}
+
+.footer-hours strong {
+  color: #f1d88c;
+  font-weight: 600;
+}
+
+/* Copyright */
+footer > p {
+  text-align: center;
+  padding: 28px 6%;
+  margin: 0;
+  border-top: 1px solid rgba(241, 216, 140, 0.12);
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 0.88rem;
+  color: rgba(255, 255, 255, 0.58);
+  background: rgba(0, 0, 0, 0.25);
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .info-footer {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 38px;
+  }
+  
+  .tilte-footer {
+    font-size: 2.3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    padding: 52px 0 0;
+  }
+  
+  .footer-container {
+    padding: 0 5%;
+  }
+  
+  .footer-text {
+    margin-bottom: 48px;
+    padding-bottom: 42px;
+  }
+  
+  .tilte-footer {
+    font-size: 2rem;
+    margin-bottom: 18px;
+  }
+  
+  .p-footer {
+    font-size: 0.94rem;
+    margin-bottom: 28px;
+  }
+  
+  .p-footer br {
+    display: none;
+  }
+  
+  .subscribe-form {
+    flex-direction: column;
+  }
+  
+  .subscribe-input,
+  .subscribe-btn {
+    width: 100%;
+  }
+  
+  .contant-info {
+    padding: 38px 0 48px;
+  }
+  
+  .info-footer {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  
+  .logo-footer {
+    width: 125px;
+  }
+}
+
+@media (max-width: 480px) {
+  footer {
+    padding: 42px 0 0;
+  }
+  
+  .footer-container {
+    padding: 0 4%;
+  }
+  
+  .footer-text {
+    margin-bottom: 38px;
+    padding-bottom: 35px;
+  }
+  
+  .tilte-footer {
+    font-size: 1.72rem;
+    letter-spacing: 0.5px;
+  }
+  
+  .tilte-footer br {
+    display: none;
+  }
+  
+  .p-footer {
+    font-size: 0.88rem;
+    line-height: 1.68;
+  }
+  
+  .subscribe-input,
+  .subscribe-btn {
+    padding: 14px 18px;
+    font-size: 0.90rem;
+  }
+  
+  .contant-info {
+    padding: 32px 0 38px;
+  }
+  
+  .footer-section h4 {
+    font-size: 1.08rem;
+    margin-bottom: 18px;
+  }
+  
+  .contact-info p,
+  .footer-hours p,
+  .info-btn {
+    font-size: 0.86rem;
+  }
+  
+  .logo-footer {
+    width: 105px;
+  }
+  
+  footer > p {
+    font-size: 0.82rem;
+    padding: 22px 4%;
+  }
+}
