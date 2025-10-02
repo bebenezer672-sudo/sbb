@@ -19,21 +19,3 @@ body {
   min-height: 100vh;
 }
 
-/* Responsive base styles */
-@media (max-width: 768px) {
-  .hero-wrapper {
-    background-attachment: scroll;
-    background-position: center center;
-  }
-}
-
-@media (max-width: 480px) {
-  body {
-    font-size: 14px;
-  }
-  
-  .hero-wrapper {
-    background-size: cover;
-    background-position: center;
-  }
-}

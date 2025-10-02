@@ -8,35 +8,35 @@
   justify-content: space-between;
   align-items: center;
   background-color: rgba(13, 27, 42, 0.85);
-  padding: 11px 40px;
+  padding: 16px 60px;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1000;
   box-sizing: border-box;
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  box-shadow: 0 3px 13px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
   transition: all 0.3s ease;
 }
 
 .nav-container:hover {
   background-color: rgba(13, 27, 42, 0.95);
-  box-shadow: 0 4px 17px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
 }
 
 /* Navbar Left - Logo and navigation links */
 .nav-left {
   display: flex;
   align-items: center;
-  gap: 27px;
+  gap: 40px;
 }
 
 .nav-list {
   display: flex;
   align-items: center;
-  gap: 21px;
+  gap: 32px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -52,19 +52,19 @@
 }
 
 .logo img {
-  height: 47px;
+  height: 70px;
   width: auto;
-  filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.2));
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
 }
 
 /* Navigation links */
 .nav-list li a {
   color: rgb(255, 255, 255);
-  font-size: 11px;
+  font-size: 17px;
   font-weight: 500;
-  letter-spacing: 0.3px;
-  padding: 5px 11px;
-  border-radius: 4px;
+  letter-spacing: 0.5px;
+  padding: 8px 16px;
+  border-radius: 6px;
   transition: all 0.3s ease;
   position: relative;
 }
@@ -76,7 +76,7 @@
   left: 50%;
   transform: translateX(-50%);
   width: 0;
-  height: 1px;
+  height: 2px;
   background-color: #f1d88c;
   transition: width 0.3s ease;
 }
@@ -98,7 +98,7 @@
 
 .nav-right ul {
   display: flex; 
-  gap: 11px;
+  gap: 16px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -110,13 +110,13 @@
 .contact-btn {
   font-family: 'Poppins', 'Montserrat', 'Quicksand', Arial, sans-serif;
   font-weight: 600;
-  font-size: 11px;
-  border-radius: 5px;
-  padding: 8px 21px;
+  font-size: 16px;
+  border-radius: 8px;
+  padding: 12px 32px;
   display: inline-block;
   transition: all 0.3s ease;
-  border: 1px solid transparent;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  border: 2px solid transparent;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .menu-btn {
@@ -128,8 +128,8 @@
 .menu-btn:hover {
   background-color: #ffe29c;
   color: #000;
-  transform: translateY(-1px);
-  box-shadow: 0 3px 8px rgba(241, 216, 140, 0.4);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(241, 216, 140, 0.4);
 }
 
 .contact-btn {
@@ -141,102 +141,14 @@
 .contact-btn:hover {
   background-color: #fff;
   color: #222;
-  transform: translateY(-1px);
-  box-shadow: 0 3px 8px rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
 }
 
 /* Active link state */
 .nav-list li a.active {
   color: #f1d88c;
   background-color: rgba(241, 216, 140, 0.15);
-}
-
-/* Responsive improvements */
-@media (max-width: 1024px) {
-  .nav-container {
-    padding: 10px 30px;
-  }
-  
-  .nav-left {
-    gap: 20px;
-  }
-  
-  .nav-list {
-    gap: 16px;
-  }
-  
-  .logo img {
-    height: 40px;
-  }
-  
-  .nav-list li a {
-    font-size: 10px;
-    padding: 4px 9px;
-  }
-  
-  .menu-btn,
-  .contact-btn {
-    padding: 7px 18px;
-    font-size: 10px;
-  }
-}
-
-@media (max-width: 768px) {
-  .nav-container {
-    padding: 8px 15px;
-    flex-wrap: wrap;
-  }
-  
-  .nav-left {
-    gap: 12px;
-  }
-  
-  .nav-list {
-    gap: 10px;
-  }
-  
-  .logo img {
-    height: 35px;
-  }
-  
-  .nav-list li:not(.logo) a {
-    font-size: 9px;
-    padding: 3px 7px;
-  }
-  
-  .menu-btn,
-  .contact-btn {
-    padding: 6px 15px;
-    font-size: 9px;
-  }
-  
-  .nav-right ul {
-    gap: 8px;
-  }
-}
-
-@media (max-width: 480px) {
-  .nav-container {
-    padding: 6px 10px;
-  }
-  
-  .nav-list li:not(.logo):not(.home) {
-    display: none;
-  }
-  
-  .logo img {
-    height: 30px;
-  }
-  
-  .nav-list li a {
-    font-size: 8px;
-  }
-  
-  .menu-btn,
-  .contact-btn {
-    padding: 5px 12px;
-    font-size: 8px;
-  }
 }
 
 /* Responsive improvements */
