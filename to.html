@@ -6,47 +6,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bristo Bakery</title>
 
-  <link rel="stylesheet" href="css/navbar.css">
-  <link rel="stylesheet" href="css/globel.css">
+  <!-- CSS bestanden -->
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/globel.css">
+<link rel="stylesheet" href="css/navbar.css">
+<link rel="stylesheet" href="css/hero.css">
+<link rel="stylesheet" href="css/menu.css">
+<link rel="stylesheet" href="css/footer.css">
+
 </head>
 
 <body>
- 
+
+  <!-- HEADER -->
   <header>
-    <section>
     <nav class="nav-container">
       <div class="nav-left">
         <ul class="nav-list">
           <li class="logo">
             <a href="index.html">
-              <img src="image/logo_transparent_white.png" alt="Bristo Bakery Logo" style="height:40px;">
+              <img src="image/logo_transparent_white.png" alt="Bristo Bakery Logo" ">
             </a>
           </li>
-          <li class="home"><a href="Home">Home</a></li>
-         <li class="chef"><a href="Chef">Chef</a></li>
-          <li class="gallery"><a href="gallary.html">Gallery</a></li>
+          <li class="home"><a href="index.html">Home</a></li>
+          <li class="chef"><a href="chef.html">Chef</a></li>
+          <li class="gallery"><a href="gallery.html">Gallery</a></li>
         </ul>
       </div>
 
       <div class="nav-right">
         <ul>
-      <li><a href="menu" class="menu-btn">Menu</a></li>
-         <li><a href="contact" class="contact-btn">Contact</a></li>
+          <li><a href="menu.html" class="menu-btn">Menu</a></li>
+          <li><a href="contact.html" class="contact-btn">Contact</a></li>
         </ul>
       </div>
-  </nav>
-      </section>
-      
+    </nav>
   </header>
 
-
+  <!-- MAIN -->
   <main>
-  
 
-
+    <!-- HERO SECTION -->
+     <h1 class="title-section">Bristo | Bakery</h1>
     <section class="hero">
-      <h1 class="title-section">Bristo | Bakery</h1>
       
+
       <div class="container-title">
         <p class="subtitle-text">
           Welkom bij Bakkerij Bristo Bakery – dé plek waar de geur van versgebakken brood je elke dag 
@@ -54,13 +58,17 @@
           ingrediënten. Of je nu houdt van een knapperig stokbrood, een luchtig desembrood 
           of zoete verleidingen als appeltaart en roombroodjes: bij ons vind je altijd iets lekkers.
         </p>
-        <button class="explore">Explore More</button>
+
+        <!-- Explore button als link -->
+        <a href="menu.html" class="explore">Explore More</a>
       </div>
     </section>
 
+    <!-- MENU SECTION -->
     <section class="menu-card">
       <div class="menu-icon">
-        <img src="" alt="Menu Icon">
+        <!-- Plaats hier een echt icoon of afbeelding -->
+        <img src="image/menu-icon.svg" alt="Menu Icon">
       </div>
 
       <h2 class="menu-title">Menu</h2>
@@ -69,8 +77,13 @@
         <span class="arrow">→</span>
       </div>
     </section>
+
   </main>
 
-</body>
+  <!-- FOOTER (optioneel toevoegen later) -->
+  <footer>
+    <p>&copy; 2025 Bristo Bakery. Alle rechten voorbehouden.</p>
+  </footer>
 
+</body>
 </html>

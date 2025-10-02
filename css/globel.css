@@ -1,9 +1,44 @@
+/* ==========================================================================
+   Global Styles - Site-wide reusable components and utilities
+   ========================================================================== */
+
+/* List items - Global list styling */
 li {
-    list-style: none;
-   
+  list-style: none;
 } 
 
+/* Link styling - Global anchor styles */
 li a {
-    text-decoration: none;
-    font-size: 22px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 25px;
+  transition: color 0.3s ease;
+}
+
+/* Button styles - Reusable button classes */
+.btn {
+  font-family: 'Poppins', 'Montserrat', 'Quicksand', Arial, sans-serif;
+  font-weight: 500;
+  padding: 12px 28px;
+  border-radius: 6px;
+  display: inline-block;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Utility classes */
+.text-center {
+  text-align: center;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

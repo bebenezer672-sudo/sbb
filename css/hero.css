@@ -1,0 +1,64 @@
+/* ==========================================================================
+   Hero Section Component
+   ========================================================================== */
+
+/* Hero Section - Main landing area */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+}
+
+
+.title-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 150px;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+
+.container-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 800px;
+  left: 500px;
+  
+}
+
+.subtitle-text {
+  color: white;
+  font-size: 25px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  margin-left: -300px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+.explore {
+  font-size: 20px;
+  padding: 20px 50px;
+  background-color: #f1d88c;
+  color: #222;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Poppins', 'Montserrat', 'Quicksand', Arial, sans-serif;
+  margin-right: 500px ;
+}
+
+.explore:hover {
+  background-color: #ffe29c;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+}
