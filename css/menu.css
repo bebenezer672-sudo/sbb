@@ -1,0 +1,56 @@
+/* ==========================================================================
+   Menu Card Component
+   ========================================================================== */
+
+/* Menu Card - Floating menu display */
+.menu-card {
+  background: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  padding: 90px 40px;
+  position: absolute;
+  right: 400px;
+  text-align: center;
+  top: 700px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  width: 150px;
+  border-radius: 25px;
+}
+
+.menu-card:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  transform: translateY(-3px);
+}
+
+/* Menu Icon */
+.menu-icon img {
+  display: flex;
+  height: 130px;
+  width: 140px;
+  margin-left: 20px;
+  object-fit: contain;
+}
+
+/* Menu Title */
+.menu-title {
+  color: #6b3e0a;
+  font-family: "Brush Script MT", cursive;
+  font-size: 48px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+/* Menu Footer - Action area */
+.menu-footer {
+  align-items: center;
+  color: #333;
+  display: flex;
+  font-size: 20px;
+  gap: 6px;
+  justify-content: center;
+}
+
+.arrow {
+  font-size: 16px;
+}
