@@ -1,7 +1,7 @@
 /* Our Story Section */
 .our-story {
-  padding: 125px 6%;
-  background: linear-gradient(135deg, rgba(34, 34, 34, 0.92) 0%, rgba(34, 34, 34, 0.88) 100%);
+  padding: 84px 6%;
+  background: linear-gradient(135deg, rgba(18, 48, 28, 0.92) 0%, rgba(15, 38, 22, 0.88) 100%);
   position: relative;
   overflow: hidden;
   min-height: 100vh;
@@ -9,19 +9,19 @@
 
 .story-title {
   font-family: 'Poppins', sans-serif;
-  font-size: 3.2rem;
+  font-size: 2.14rem;
   font-weight: 700;
   color: #f1d88c;
   text-align: center;
-  margin-bottom: 58px;
-  letter-spacing: 1.8px;
+  margin-bottom: 39px;
+  letter-spacing: 1.2px;
   text-transform: uppercase;
 }
 
 .story-content {
   display: grid;
   grid-template-columns: 1.2fr 1fr;
-  gap: 85px;
+  gap: 57px;
   align-items: center;
   position: relative;
 }
@@ -29,86 +29,253 @@
 .story-images {
   display: flex;
   flex-direction: row;
-  gap: 32px;
+  gap: 21px;
   position: relative;
   align-items: flex-start;
 }
 
 .story-img {
   width: 100%;
-  border-radius: 18px;
-  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.48);
+  border-radius: 12px;
+  box-shadow: 0 5px 19px rgba(0, 0, 0, 0.48);
   transition: transform 0.32s ease, box-shadow 0.32s ease;
 }
 
 .croissant-img {
-  height: 420px;
+  height: 281px;
   object-fit: cover;
   flex: 1;
 }
 
 .baker-img {
-  height: 420px;
+  height: 281px;
   object-fit: cover;
   flex: 1;
   margin-left: 0;
 }
 
 .story-img:hover {
-  transform: translateY(-8px) scale(1.02);
-  box-shadow: 0 12px 38px rgba(241, 216, 140, 0.24);
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 8px 25px rgba(241, 216, 140, 0.24);
 }
 
 .story-text {
-  padding: 42px;
+  padding: 28px;
   background: rgba(255, 255, 255, 0.06);
-  backdrop-filter: blur(12px);
-  border-radius: 22px;
+  backdrop-filter: blur(8px);
+  border-radius: 15px;
   border: 1px solid rgba(241, 216, 140, 0.18);
-  margin-left: 25px;
+  margin-left: 17px;
 }
 
 .story-paragraph {
   font-family: 'Montserrat', Arial, sans-serif;
-  font-size: 22px;
+  font-size: 15px;
   line-height: 1.88;
   color: rgba(255, 255, 255, 0.88);
-  margin-bottom: 35px;
-  letter-spacing: 0.3px;
+  margin-bottom: 23px;
+  letter-spacing: 0.2px;
 }
 
 .story-btn {
-  padding: 14px 38px;
+  padding: 9px 25px;
   background: #f1d88c;
   color: #222;
   border: none;
-  border-radius: 28px;
+  border-radius: 19px;
   font-family: 'Poppins', sans-serif;
-  font-size: 1.02rem;
+  font-size: 0.68rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.28s ease;
-  box-shadow: 0 6px 18px rgba(241, 216, 140, 0.28);
+  box-shadow: 0 4px 12px rgba(241, 216, 140, 0.28);
 }
 
 .story-btn:hover {
   background: #e8cc7a;
-  transform: translateY(-3px);
-  box-shadow: 0 10px 28px rgba(241, 216, 140, 0.42);
+  transform: translateY(-2px);
+  box-shadow: 0 7px 19px rgba(241, 216, 140, 0.42);
 }
 
 .story-decoration {
   position: absolute;
-  bottom: -650px;
-  right: -35px;
+  bottom: -436px;
+  right: -23px;
   opacity: 0.12;
   pointer-events: none;
 }
 
 .coffee-icon {
-  width: 285px;
-  height: 285px;
-  filter: drop-shadow(0 0 28px rgba(241, 216, 140, 0.18));
+  width: 191px;
+  height: 191px;
+  filter: drop-shadow(0 0 19px rgba(241, 216, 140, 0.18));
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .our-story {
+    padding: 70px 5%;
+  }
+  
+  .story-title {
+    font-size: 1.9rem;
+    margin-bottom: 32px;
+  }
+  
+  .story-content {
+    gap: 45px;
+  }
+  
+  .story-images {
+    gap: 18px;
+  }
+  
+  .croissant-img,
+  .baker-img {
+    height: 240px;
+  }
+  
+  .story-text {
+    padding: 24px;
+    margin-left: 12px;
+  }
+  
+  .story-paragraph {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .story-btn {
+    font-size: 0.62rem;
+    padding: 8px 22px;
+  }
+  
+  .coffee-icon {
+    width: 160px;
+    height: 160px;
+  }
+  
+  .story-decoration {
+    bottom: -380px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .our-story {
+    padding: 60px 4%;
+  }
+  
+  .story-content {
+    grid-template-columns: 1fr;
+    gap: 38px;
+  }
+  
+  .story-images {
+    justify-content: center;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .story-text {
+    margin-left: 0;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .story-decoration {
+    bottom: -25px;
+    right: -20px;
+  }
+  
+  .coffee-icon {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+@media (max-width: 768px) {
+  .our-story {
+    padding: 50px 4%;
+  }
+  
+  .story-title {
+    font-size: 1.68rem;
+    margin-bottom: 28px;
+  }
+  
+  .story-images {
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .croissant-img,
+  .baker-img {
+    height: 200px;
+    width: 100%;
+  }
+  
+  .story-paragraph {
+    font-size: 13px;
+    line-height: 1.72;
+  }
+  
+  .story-btn {
+    font-size: 0.58rem;
+    padding: 7px 20px;
+  }
+  
+  .coffee-icon {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .our-story {
+    padding: 40px 3%;
+  }
+  
+  .story-title {
+    font-size: 1.4rem;
+    margin-bottom: 22px;
+    letter-spacing: 0.8px;
+  }
+  
+  .story-images {
+    gap: 12px;
+  }
+  
+  .croissant-img,
+  .baker-img {
+    height: 160px;
+  }
+  
+  .story-text {
+    padding: 18px;
+  }
+  
+  .story-paragraph {
+    font-size: 12px;
+    line-height: 1.65;
+    margin-bottom: 16px;
+  }
+  
+  .story-btn {
+    font-size: 0.55rem;
+    padding: 6px 18px;
+    border-radius: 15px;
+  }
+  
+  .story-decoration {
+    bottom: -15px;
+    right: -15px;
+    opacity: 0.08;
+  }
+  
+  .coffee-icon {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 /* Responsive */
