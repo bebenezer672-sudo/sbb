@@ -13,6 +13,8 @@
   <link rel="stylesheet" href="css/our-story.css">
   <link rel="stylesheet" href="css/why-dine.css">
   <link rel="stylesheet" href="css/customers-favourite.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/popup.css">
 </head>
 
 <body>
@@ -24,19 +26,19 @@
           <ul class="nav-list">
             <li class="logo">
               <a href="index.html">
-                <img src="image/logo_transparent_white.png" alt="Bristo Bakery Logo" ">
+                <img src="image/logo_transparent_white.png" alt="Bristo Bakery Logo" >
               </a>
             </li>
             <li class="home"><a href="index.html">Home</a></li>
             <li class="chef"><a href="chef.html">Chef</a></li>
-            <li class="gallery"><a href="gallery.html">Gallery</a></li>
+            <li class="gallery"><a href="#" id="openBtn">Gallery</a></li>
           </ul>
         </div>
 
         <div class="nav-right">
           <ul>
             <li><a href="menu.html" class="menu-btn">Menu</a></li>
-            <li><a href="contact.html" class="contact-btn">Contact</a></li>
+            <li><a href="contact.html" class="contact-btn" id="contactOpen">Contact</a></li>
           </ul>
         </div>
       </nav>
@@ -58,7 +60,7 @@
             ingrediënten. Of je nu houdt van een knapperig stokbrood, een luchtig desembrood 
             of zoete verleidingen als appeltaart en roombroodjes: bij ons vind je altijd iets lekkers.
           </p>
-          <a href="menu.html" class="explore">Explore More</a>
+          <a href="menu.html" class="explore" >Explore More</a>
         </div>
 
         <div class="hero-cta">
@@ -97,7 +99,7 @@
             ambacht, kwaliteit en warmte.
             Onze passie is niet alleen bakken, maar ook het creëren van momenten van geluk bij iedere hap.
           </p>
-          <button class="story-btn">Explore More</button>
+          <button class="story-btn" id="openExplore">Explore More</button>
         </div>
 
         <div class="story-decoration">
@@ -116,6 +118,7 @@
       </p>
     </section>
 
+    
     <section class="dine-section">
       <div class="dine-content">
         <div class="dine-text-content">
@@ -156,40 +159,38 @@
     <!-- Customers Favourite Section - All in One -->
     <section class="customers-favourite-wrapper">
       
-      <div class="customers-favourite-card-glow-text">
-        <h2 class="tilte-customers-favourite">Our Customers' Favourite</h2>
-        <p>
-          Iedere dag hebben we één topper die keer op keer gekozen wordt door onze klanten. <br>
-          Of het nu gaat om onze knapperige croissants, <br>
-          romige slagroomtaart of het traditionele volkorenbrood – <br>
-          deze klassiekers blijven absolute favorieten. <br>
-          Onze klanten noemen het de perfecte combinatie <br>
-          van ambacht, smaak en liefde voor het vak. <br>
-          Kom zelf proeven en ontdek waarom dit de favorieten van velen zijn!
-        </p>
-        <img src="image/pancakes.svg" alt="Pancakes" class="pancakes-img">
-        <img src="image/coffee-cup.svg" alt="" class="coffee-img">
+      <div class="customers-favourite-header">
+        <img src="image/coffee-cup.svg" alt="Coffee decoration" class="header-decoration-left">
+        <div class="customers-favourite-text">
+          <h2 class="customers-favourite-title">Our customers' favorite dishes</h2>
+          <p class="customers-favourite-subtitle">
+            Whether you're in the mood for a hearty breakfast, a leisurely lunch,<br>
+            or an intimate dinner, our culinary team is dedicated to providing<br>
+            an unforgettable gastronomic journey.
+          </p>
+        </div>
+        <img src="image/pancakes.svg" alt="Pancakes decoration" class="header-decoration-right">
       </div>
 
-      <div class="customers-favourite-section">
-        <div class="customers-favourite-images">
-          <img src="image/file.jpg" alt="Croissants">
-          <h3>Croissants Loaf French Toast</h3>
-        </div>
-
-        <div class="customers-favourite-images">
-          <img src="image/maak-iemand-super-blij-met-een-ontbijtverrassing-282856.webp" alt="Ontbijt">
-          <h3>Croissants Loaf French Toast</h3>
-        </div>
-
-        <div class="customers-favourite-images">
-          <img src="image/Super-Fluffy-pancakes-7.jpg" alt="Scramble">
-          <h3>Smoked Salmon Scramble</h3>
-        </div>
-
-        <div class="customers-favourite-images">
-          <img src="image/brioche-french-toast-9.jpg" alt="Pancakes">
+      <div class="customers-favourite-grid">
+        <div class="favourite-card">
+          <img src="image/file.jpg" alt="Pastelito Pancakes">
           <h3>Pastelito Pancakes</h3>
+        </div>
+
+        <div class="favourite-card">
+          <img src="image/maak-iemand-super-blij-met-een-ontbijtverrassing-282856.webp" alt="Croissant Loaf French Toast">
+          <h3>Croissant Loaf French Toast</h3>
+        </div>
+
+        <div class="favourite-card">
+          <img src="image/Super-Fluffy-pancakes-7.jpg" alt="Croissant Loaf French Toast">
+          <h3>Croissant Loaf French Toast</h3>
+        </div>
+
+        <div class="favourite-card">
+          <img src="image/brioche-french-toast-9.jpg" alt="Smoked Salmon Scramble">
+          <h3>Smoked Salmon Scramble</h3>
         </div>
       </div>
       
@@ -197,5 +198,97 @@
     
   </main>
 
+  <footer>
+    
+    <section class="footer-newsletter">
+      <div class="newsletter-content">
+        <div class="newsletter-left">
+          <h2 class="newsletter-title">Subscribe to<br>our newsletter</h2>
+        </div>
+        <div class="newsletter-right">
+          <p class="newsletter-text">"Stay up-to-date with the latest news, promotions, and exclusive offers! Subscribe to our newsletter now."</p>
+          <div class="newsletter-form-container">
+            <input type="email" class="newsletter-input" placeholder="Email" required>
+            <button type="submit" class="newsletter-btn">Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer-main">
+      <div class="footer-content">
+        <div class="footer-column footer-brand">
+          <img src="image/logo_transparent_black.png" alt="Bristo Bakery Logo" class="footer-logo">
+          <address class="footer-address">
+            <p>5800 SW 85th Ave, Miami, FL 33143</p>
+            <p>(305) 773-4585</p>
+            <p>(WE DO NOT TAKE RESERVATIONS, NO EXCEPTIONS)</p>
+          </address>
+          <div class="footer-socials">
+            <a href="#" class="social-icon" aria-label="Facebook"><span>f</span></a>
+            <a href="#" class="social-icon" aria-label="Twitter"><span>𝕏</span></a>
+            <a href="#" class="social-icon" aria-label="Instagram"><span>📷</span></a>
+            <a href="#" class="social-icon" aria-label="YouTube"><span>▶</span></a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h4 class="footer-heading">Menu</h4>
+          <ul class="footer-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">News</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Opportunities</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Location & Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4 class="footer-heading">Operational</h4>
+          <div class="footer-hours">
+            <p>Mon-Fri: 8:30AM - 4:30PM</p>
+            <p>Sat-Sun: 8:30AM - 4:30PM</p>
+          </div>
+          <div class="footer-consult">
+            <p class="consult-text">You need a consult?</p>
+            <p class="consult-phone">+ (123) 1800-567-8990</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer-bottom">
+      <p class="copyright">Copyright © BISTRO | BAKERY. All Rights Reserved.</p>
+    </section>
+
+  </footer>
+  
+  <!-- Gallery Popup -->
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span id="closeBtn" class="close">&times;</span>
+      <h2>Mijn Gallerij</h2>
+      <div class="images">
+        <img src="image/gallery-item.jpg" alt="foto 1">
+        <img src="image/gallery-item2.jpg" alt="foto 2">
+        <img src="image/gallery-item3.jpg" alt="foto 3">
+        <img src="image/gallery-item4.jpg" alt="foto 4">
+        <img src="image/gallery-item5.webp" alt="foto 5">
+        <img src="image/gallery-item6.jpg" alt="foto 6">
+
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
