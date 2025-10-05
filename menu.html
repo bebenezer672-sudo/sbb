@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu</title>
+</head>
+  <link rel="stylesheet" href="css/globel.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/menu.base.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/menu.cards.css">
+  
+<body>
+
+  
+  <div class="hero-wrapper">
+    <header>
+      <nav class="nav-container">
+        <div class="nav-left">
+          <ul class="nav-list">
+            <li class="logo">
+              <a href="index.html">
+                <img src="image/logo_transparent_white.png" alt="Bristo Bakery Logo" >
+              </a>
+            </li>
+            <li class="home"><a href="index.html">Home</a></li>
+            <li class="chef"><a href="chef.html">Chef</a></li>
+            <li class="gallery"><a href="#" id="openBtn">Gallery</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-right">
+          <ul>
+            <li><a href="menu.html" class="menu-btn">Menu</a></li>
+            <li><a href="contact.html" class="contact-btn" id="contactOpen">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+       <main>
+        <section class="menu-hero">
+          <div class="menu-hero-content">
+            <h1 class="menu-title">Our Menu</h1>
+            <p class="menu-subtitle">Discover our delicious selection of freshly baked goods and artisan treats</p>
+          </div>
+        </section>
+
+        <section class="menu-categories">
+          <div class="category-tabs">
+            <button class="category-tab active" data-category="all">All Items</button>
+            <button class="category-tab" data-category="bread">Fresh Bread</button>
+            <button class="category-tab" data-category="pastries">Pastries</button>
+            <button class="category-tab" data-category="breakfast">Breakfast</button>
+            <button class="category-tab" data-category="drinks">Drinks</button>
+          </div>
+        </section>
+
+        <section class="menu-section">
+          <!-- Bread Section -->
+          <div class="menu-category-section" data-category="bread">
+            <h2 class="category-title">Fresh Bread</h2>
+            <div class="menu-cards">
+              <div class="menu-card" data-category="bread">
+                <div class="menu-card-image">
+                  <img src="image/man-bakker-met-vers-brood-bij-bakkershuis_1303-32273.jpg" alt="Sourdough Bread">
+                  <div class="card-overlay">
+                    <span class="price">€4.50</span>
+                  </div>
+                </div>
+                <div class="menu-card-content">
+                  <h3>Artisan Sourdough</h3>
+                  <p>Traditional sourdough with a crispy crust and soft interior</p>
+                  <button class="add-to-cart">Add to Cart</button>
+                </div>
+              </div>
+
+              <div class="menu-card" data-category="bread">
+                <div class="menu-card-image">
+                  <img src="image/gallery-item3.jpg" alt="Whole Wheat Bread">
+                  <div class="card-overlay">
+                    <span class="price">€3.80</span>
+                  </div>
+                </div>
+                <div class="menu-card-content">
+                  <h3>Whole Wheat Bread</h3>
+                  <p>Healthy whole wheat bread packed with nutrients</p>
+                  <button class="add-to-cart">Add to Cart</button>
+                </div>
+              </div>
+
+              <div class="menu-card" data-category="bread">
+                <div class="menu-card-image">
+                  <img src="image/gallery-item7.jpg" alt="French Baguette">
+                  <div class="card-overlay">
+                    <span class="price">€2.20</span>
+                  </div>
+                </div>
+                <div class="menu-card-content">
+                  <h3>French Baguette</h3>
+                  <p>Classic French baguette with authentic taste</p>
+                  <button class="add-to-cart">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pastries Section -->
+          <div class="menu-category-section" data-category="pastries">
+            <h2 class="category-title">Pastries & Desserts</h2>
+            <div class="menu-cards">
+              <div class="menu-card" data-category="pastries">
+                <div class="menu-card-image">
+                  <img src="image/baker-holding-metal-tray-full-fresh-croissants-illuminated-with-lovely-light-from-window-ai-generative.jpg" alt="Fresh Croissants">
+                  <div class="card-overlay">
+                    <span class="price">€2.80</span>
+                  </div>
+                </div>
+                <div class="menu-card-content">
+                  <h3>Butter Croissants</h3>
+                  <p>Flaky, buttery croissants made fresh daily</p>
+                  <button class="add-to-cart">Add to Cart</button>
+                </div>
+              </div>
+
+              <div class="menu-card" data-category="pastries">
+                <div class="menu-card-image">
+                  <img src="image/front-view-delicious-chocolate-concept.jpg" alt="Chocolate Cake">
+                  <div class="card-overlay">
+                    <span class="price">€5.50</span>
+                  </div>
+                </div>
+                <div class="menu-card-content">
+                  <h3>Chocolate Cake</h3>
+                  <p>Rich chocolate cake with premium cocoa</p>
+                  <button class="add-to-cart">Add to Cart</button>
+                </div>
+              </div>
+
+              <div class="menu-card" data-category="pastries">
+                <div class="menu-card-image">
+                  <img src="image/gallery-item2.jpg" alt="Danish Pastry">
+                  <div class="card-overlay">
+                    <span class="price">€3.20</span>
+                  </div>
+                </div>
+                <div class="menu-card-content">
+                  <h3>Danish Pastry</h3>
+                  <p>Sweet Danish pastry with fruit filling</p>
+                  <button class="add-to-cart">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Breakfast Section -->
+          <div class="menu-category-section" data-category="breakfast">
+            <h2 class="category-title">Breakfast Specials</h2>
+            <div class="menu-cards">
+              <div class="menu-card" data-category="breakfast">
+                <div class="menu-card-image">
+                  <img src="image/Super-Fluffy-pancakes-7.jpg" alt="Fluffy Pancakes">
+                  <div class="card-overlay">
+                    <span class="price">€8.50</span>
+                  </div>
+                </div>
+                <div class="menu-card-content">
+                  <h3>Fluffy Pancakes</h3>
+                  <p>Stack of fluffy pancakes with maple syrup</p>
+                  <button class="add-to-cart">Add to Cart</button>
+                </div>
+              </div>
+
+              <div class="menu-card" data-category="breakfast">
+                <div class="menu-card-image">
+                  <img src="image/brioche-french-toast-9.jpg" alt="French Toast">
+                  <div class="card-overlay">
+                    <span class="price">€7.80</span>
+                  </div>
+                </div>
+                <div class="menu-card-content">
+                  <h3>Brioche French Toast</h3>
+                  <p>Golden brioche French toast with fresh berries</p>
+                  <button class="add-to-cart">Add to Cart</button>
+                </div>
+              </div>
+
+              <div class="menu-card" data-category="breakfast">
+                <div class="menu-card-image">
+                  <img src="image/maak-iemand-super-blij-met-een-ontbijtverrassing-282856.webp" alt="Breakfast Platter">
+                  <div class="card-overlay">
+                    <span class="price">€12.50</span>
+                  </div>
+                </div>
+                <div class="menu-card-content">
+                  <h3>Breakfast Platter</h3>
+                  <p>Complete breakfast with eggs, bacon, and toast</p>
+                  <button class="add-to-cart">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Drinks Section -->
+          <div class="menu-category-section" data-category="drinks">
+            <h2 class="category-title">Beverages</h2>
+            <div class="menu-cards">
+              <div class="menu-card" data-category="drinks">
+                <div class="menu-card-image">
+                  <img src="image/gallery-item4.jpg" alt="Fresh Coffee">
+                  <div class="card-overlay">
+                    <span class="price">€3.50</span>
+                  </div>
+                </div>
+                <div class="menu-card-content">
+                  <h3>Artisan Coffee</h3>
+                  <p>Freshly brewed coffee from premium beans</p>
+                  <button class="add-to-cart">Add to Cart</button>
+                </div>
+              </div>
+
+              <div class="menu-card" data-category="drinks">
+                <div class="menu-card-image">
+                  <img src="image/gallery-item6.jpg" alt="Fresh Juice">
+                  <div class="card-overlay">
+                    <span class="price">€4.20</span>
+                  </div>
+                </div>
+                <div class="menu-card-content">
+                  <h3>Fresh Orange Juice</h3>
+                  <p>100% fresh squeezed orange juice</p>
+                  <button class="add-to-cart">Add to Cart</button>
+                </div>
+              </div>
+
+              <div class="menu-card" data-category="drinks">
+                <div class="menu-card-image">
+                  <img src="image/gallery-item8.jpg" alt="Hot Chocolate">
+                  <div class="card-overlay">
+                    <span class="price">€4.80</span>
+                  </div>
+                </div>
+                <div class="menu-card-content">
+                  <h3>Hot Chocolate</h3>
+                  <p>Rich hot chocolate with whipped cream</p>
+                  <button class="add-to-cart">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+       </main>
+
+        <footer>
+    
+    <section class="footer-newsletter">
+      <div class="newsletter-content">
+        <div class="newsletter-left">
+          <h2 class="newsletter-title">Subscribe to<br>our newsletter</h2>
+        </div>
+        <div class="newsletter-right">
+          <p class="newsletter-text">"Stay up-to-date with the latest news, promotions, and exclusive offers! Subscribe to our newsletter now."</p>
+          <div class="newsletter-form-container">
+            <input type="email" class="newsletter-input" placeholder="Email" required>
+            <button type="submit" class="newsletter-btn">Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer-main">
+      <div class="footer-content">
+        <div class="footer-column footer-brand">
+          <img src="image/logo_transparent_black.png" alt="Bristo Bakery Logo" class="footer-logo">
+          <address class="footer-address">
+            <p>5800 SW 85th Ave, Miami, FL 33143</p>
+            <p>(305) 773-4585</p>
+            <p>(WE DO NOT TAKE RESERVATIONS, NO EXCEPTIONS)</p>
+          </address>
+          <div class="footer-socials">
+            <a href="#" class="social-icon" aria-label="Facebook"><span>f</span></a>
+            <a href="#" class="social-icon" aria-label="Twitter"><span>𝕏</span></a>
+            <a href="#" class="social-icon" aria-label="Instagram"><span>📷</span></a>
+            <a href="#" class="social-icon" aria-label="YouTube"><span>▶</span></a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h4 class="footer-heading">Menu</h4>
+          <ul class="footer-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">News</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Opportunities</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Location & Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4 class="footer-heading">Operational</h4>
+          <div class="footer-hours">
+            <p>Mon-Fri: 8:30AM - 4:30PM</p>
+            <p>Sat-Sun: 8:30AM - 4:30PM</p>
+          </div>
+          <div class="footer-consult">
+            <p class="consult-text">You need a consult?</p>
+            <p class="consult-phone">+ (123) 1800-567-8990</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer-bottom">
+      <p class="copyright">Copyright © BISTRO | BAKERY. All Rights Reserved.</p>
+    </section>
+
+  </footer>
+  
+  <script src="js/menu.js"></script>
+</body>
+</html>
