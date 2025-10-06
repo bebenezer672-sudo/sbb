@@ -1,17 +1,3 @@
-const openBtn = document.querySelector("#openBtn");
-const popup = document.querySelector("#popup");
-const closeBtn = document.querySelector("#closeBtn");
-
-
-
-
-openBtn.addEventListener("click", () => {
-  popup.style.display = "flex";
-})
-
-closeBtn.addEventListener("click", () => {
-  popup.style.display = "none";
-})
-
-
-
+import input from "./js/footer.js";
+import IntroScreen from './js/intro.js';
+import { openBtn, popup, closeBtn } from './popup.js';

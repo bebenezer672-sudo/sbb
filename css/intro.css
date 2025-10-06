@@ -1,0 +1,379 @@
+/* Intro Screen Styles */
+.intro-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg, #0f0f0f 0%, #2d1810 30%, #1a1a1a 70%, #0f0f0f 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    overflow: hidden;
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    box-shadow: inset 0 0 100px rgba(212, 175, 55, 0.1);
+}
+
+.intro-screen::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 50% 50%, transparent 0%, rgba(0,0,0,0.8) 100%);
+    z-index: 1;
+}
+
+.intro-screen.fade-out {
+    opacity: 0;
+    transform: scale(1.1);
+    pointer-events: none;
+}
+
+.intro-content {
+    text-align: center;
+    color: white;
+    position: relative;
+    max-width: 600px;
+    padding: 2rem;
+    z-index: 2;
+}
+
+.intro-logo {
+    width: 220px;
+    height: auto;
+    margin-bottom: 2.5rem;
+    animation: logoEntrance 3s ease-out;
+    filter: drop-shadow(0 0 30px rgba(212, 175, 55, 0.4));
+    transition: transform 0.3s ease;
+}
+
+.intro-logo:hover {
+    transform: scale(1.05);
+}
+
+.intro-title {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    font-family: 'Georgia', serif;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    animation: titleMagic 3s ease-out 0.5s both;
+    background: linear-gradient(45deg, #d4af37, #f4e4bc, #d4af37, #b8860b);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0 0 30px rgba(212, 175, 55, 0.5);
+    position: relative;
+}
+
+.intro-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #d4af37, transparent);
+    animation: underlineGrow 2s ease-out 1.5s both;
+}
+
+.intro-subtitle {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+    animation: subtitleGlow 2.5s ease-out 1s both;
+    font-style: italic;
+    letter-spacing: 2px;
+    color: #f4e4bc;
+    text-shadow: 0 0 10px rgba(244, 228, 188, 0.3);
+}
+
+.intro-tagline {
+    font-size: 1rem;
+    opacity: 0.7;
+    animation: taglineSlide 2s ease-out 1.8s both;
+    border-top: 1px solid rgba(212, 175, 55, 0.3);
+    padding-top: 1.5rem;
+    margin-top: 1.5rem;
+    color: #ccc;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.loading-animation {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+    animation: loadingFadeIn 1s ease-out 2.5s both;
+}
+
+.loading-dot {
+    width: 14px;
+    height: 14px;
+    background: linear-gradient(45deg, #d4af37, #f4e4bc);
+    border-radius: 50%;
+    animation: loadingPulse 1.8s ease-in-out infinite both;
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
+}
+
+.loading-dot:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.loading-dot:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.skip-intro {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    background: rgba(212, 175, 55, 0.1);
+    border: 2px solid rgba(212, 175, 55, 0.5);
+    color: #d4af37;
+    padding: 12px 24px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: all 0.4s ease;
+    animation: skipButtonEntrance 1s ease-out 3s both;
+    backdrop-filter: blur(5px);
+    z-index: 3;
+}
+
+.skip-intro:hover {
+    background: rgba(212, 175, 55, 0.2);
+    border-color: #d4af37;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(212, 175, 55, 0.3);
+}
+
+/* Background Animation Elements */
+.intro-bg-elements {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.floating-element {
+    position: absolute;
+    opacity: 0.08;
+    animation: floatMagic 8s ease-in-out infinite;
+    font-size: 3rem;
+    color: #d4af37;
+    text-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+}
+
+.floating-element:nth-child(1) {
+    top: 20%;
+    left: 10%;
+    animation-delay: 0s;
+    animation-duration: 12s;
+}
+
+.floating-element:nth-child(2) {
+    top: 60%;
+    right: 15%;
+    animation-delay: 4s;
+    animation-duration: 14s;
+}
+
+.floating-element:nth-child(3) {
+    bottom: 30%;
+    left: 20%;
+    animation-delay: 8s;
+    animation-duration: 16s;
+}
+
+/* Advanced Animations */
+@keyframes logoEntrance {
+    0% {
+        opacity: 0;
+        transform: scale(0.3) rotate(-20deg) translateY(100px);
+        filter: blur(10px);
+    }
+    50% {
+        opacity: 0.8;
+        transform: scale(1.1) rotate(5deg) translateY(-20px);
+        filter: blur(2px);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) rotate(0deg) translateY(0);
+        filter: blur(0px);
+    }
+}
+
+@keyframes titleMagic {
+    0% {
+        opacity: 0;
+        transform: translateY(80px) scale(0.8);
+        background-position: 0% 50%;
+        letter-spacing: 15px;
+    }
+    50% {
+        opacity: 0.8;
+        transform: translateY(-10px) scale(1.05);
+        background-position: 100% 50%;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+        background-position: 200% 50%;
+        letter-spacing: 8px;
+    }
+}
+
+@keyframes underlineGrow {
+    0% {
+        width: 0;
+        opacity: 0;
+    }
+    100% {
+        width: 100px;
+        opacity: 1;
+    }
+}
+
+@keyframes subtitleGlow {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+        text-shadow: 0 0 0px rgba(244, 228, 188, 0);
+    }
+    100% {
+        opacity: 0.9;
+        transform: translateY(0);
+        text-shadow: 0 0 10px rgba(244, 228, 188, 0.3);
+    }
+}
+
+@keyframes taglineSlide {
+    0% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    100% {
+        opacity: 0.7;
+        transform: translateX(0);
+    }
+}
+
+@keyframes loadingPulse {
+    0%, 100% {
+        transform: scale(0.8);
+        opacity: 0.5;
+    }
+    50% {
+        transform: scale(1.3);
+        opacity: 1;
+        box-shadow: 0 0 25px rgba(212, 175, 55, 0.8);
+    }
+}
+
+@keyframes loadingFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes skipButtonEntrance {
+    0% {
+        opacity: 0;
+        transform: translateX(50px) scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+    }
+}
+
+@keyframes floatMagic {
+    0%, 100% {
+        transform: translateY(0px) rotate(0deg) scale(1);
+        opacity: 0.05;
+    }
+    25% {
+        transform: translateY(-30px) rotate(90deg) scale(1.1);
+        opacity: 0.12;
+    }
+    50% {
+        transform: translateY(-15px) rotate(180deg) scale(0.9);
+        opacity: 0.08;
+    }
+    75% {
+        transform: translateY(-40px) rotate(270deg) scale(1.05);
+        opacity: 0.1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .intro-title {
+        font-size: 2.8rem;
+        letter-spacing: 4px;
+    }
+    
+    .intro-subtitle {
+        font-size: 1.1rem;
+        letter-spacing: 1px;
+    }
+    
+    .intro-logo {
+        width: 170px;
+    }
+    
+    .skip-intro {
+        bottom: 25px;
+        right: 25px;
+        padding: 10px 18px;
+        font-size: 0.8rem;
+    }
+    
+    .intro-content {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .intro-title {
+        font-size: 2.2rem;
+        letter-spacing: 2px;
+    }
+    
+    .intro-logo {
+        width: 140px;
+    }
+    
+    .floating-element {
+        font-size: 2rem;
+    }
+}
+
+/* Prevent scrolling during intro */
+body.intro-active {
+    overflow: hidden;
+    height: 100vh;
+}
