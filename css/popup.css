@@ -335,3 +335,146 @@
     text-align: left;
   }
 }
+
+
+/* ==========================================================================
+   Chef Popup Component
+   ========================================================================== */
+
+/* Chef Popup Specific Styling */
+.chef-popup .popup-content {
+  max-width: 800px;
+  padding: 40px;
+}
+
+.chef-popup h2 {
+  font-family: 'Playfair Display', 'Poppins', serif;
+  font-size: 2.8rem;
+  font-weight: 400;
+  color: #2d1810;
+  margin: 0 0 35px 0;
+  text-align: center;
+  letter-spacing: -0.5px;
+  position: relative;
+}
+
+.chef-popup h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, #d4af37, #f4e4bc, #d4af37);
+  border-radius: 2px;
+}
+
+/* Chef Info Container */
+.chef-info {
+  display: flex;
+  gap: 35px;
+  align-items: flex-start;
+}
+
+/* Chef Image */
+.chef-image {
+  width: 280px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+}
+
+.chef-image:hover {
+  transform: scale(1.02);
+}
+
+/* Chef Text Content */
+.chef-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.chef-text p {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #444;
+  margin: 0;
+  text-align: justify;
+  letter-spacing: 0.3px;
+}
+
+/* Chef Popup Close Button */
+.chef-popup .close {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #ddd;
+  color: #666;
+}
+
+.chef-popup .close:hover {
+  background: #f8f8f8;
+  color: #2d1810;
+  border-color: #d4af37;
+}
+
+/* Chef Popup Responsive Design */
+@media (max-width: 768px) {
+  .chef-popup .popup-content {
+    padding: 35px 25px;
+    max-width: 95%;
+  }
+  
+  .chef-popup h2 {
+    font-size: 2.3rem;
+    margin-bottom: 30px;
+  }
+  
+  .chef-info {
+    flex-direction: column;
+    gap: 25px;
+    text-align: center;
+  }
+  
+  .chef-image {
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+    margin: 0 auto;
+  }
+  
+  .chef-text p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    text-align: left;
+  }
+}
+
+@media (max-width: 480px) {
+  .chef-popup .popup-content {
+    padding: 30px 20px;
+  }
+  
+  .chef-popup h2 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+  }
+  
+  .chef-info {
+    gap: 20px;
+  }
+  
+  .chef-image {
+    height: 250px;
+  }
+  
+  .chef-text p {
+    font-size: 0.95rem;
+    line-height: 1.65;
+  }
+}

@@ -30,7 +30,7 @@
               </a>
             </li>
             <li class="home"><a href="index.html">Home</a></li>
-            <li class="chef"><a href="chef.html">Chef</a></li>
+            <li class="chef"><a href="#" id="chefBtn">Chef</a></li>
             <li class="gallery"><a href="#" id="openBtn">Gallery</a></li>
           </ul>
         </div>
@@ -208,7 +208,7 @@
             to our newsletter now."</p>
           <div class="newsletter-form-container">
             <input type="email" class="newsletter-input" placeholder="Email" required>
-            <button type="submit" class="newsletter-btn">Subscribe</button>
+            <button type="submit" class="newsletter-btn" id="subscribeBtn">Subscribe</button>
           </div>
         </div>
       </div>
@@ -244,7 +244,7 @@
         <div class="footer-column">
           <h4 class="footer-heading">Quick Links</h4>
           <ul class="footer-links">
-            <li><a href="#">Menu</a></li>
+            <li><a href="menu.html">Menu</a></li>
             <li><a href="#">Opportunities</a></li>
             <li><a href="#">Privacy Policy</a></li>
             <li><a href="#">Location & Contact</a></li>
@@ -284,6 +284,55 @@
         <img src="image/gallery-item5.webp" alt="foto 5">
         <img src="image/gallery-item6.jpg" alt="foto 6">
 
+      </div>
+    </div>
+  </div>
+
+  <!-- Chef Popup -->
+  <div id="chefPopup" class="popup chef-popup">
+    <div class="popup-content chef-popup-content">
+      <span id="chefCloseBtn" class="close">&times;</span>
+      <h2>Chef</h2>
+      <div class="chef-info">
+        <img src="image/man-bakker-met-vers-brood-bij-bakkershuis_1303-32273.jpg" alt="Head Chef" class="chef-image">
+        <div class="chef-text">
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora voluptatem omnis tempore
+             architecto suscipit dolorem similique. Nesciunt deleniti itaque 
+            ut earum consequuntur dignissimos non, et, sit in rerum eius minus?</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Subscribe Popup -->
+  <div id="subscribePopup" class="popup subscribe-popup">
+    <div class="popup-content subscribe-popup-content">
+      <span id="subscribeCloseBtn" class="close">&times;</span>
+      <h2>Subscribe to Our Newsletter</h2>
+      <div class="subscribe-info">
+        <div class="subscribe-icon">
+          <img src="image/logo_transparent_black.png" alt="Bristo Bakery Logo" class="subscribe-logo">
+        </div>
+        <div class="subscribe-text">
+          <p class="subscribe-description">Blijf op de hoogte van onze nieuwste producten, speciale aanbiedingen en exclusieve events. 
+          Ontvang als eerste informatie over nieuwe recepten en bakkerij nieuws!</p>
+        </div>
+        <form class="subscribe-form">
+          <div class="subscribe-input-group">
+            <input type="text" class="subscribe-input" placeholder="Voornaam" required>
+          </div>
+          <div class="subscribe-input-group">
+            <input type="email" class="subscribe-input" placeholder="Email adres" required>
+          </div>
+          <div class="subscribe-checkbox-group">
+            <label class="subscribe-checkbox-label">
+              <input type="checkbox" class="subscribe-checkbox" required>
+              <span class="checkmark"></span>
+              Ik ga akkoord met de <a href="#" class="subscribe-link">privacyvoorwaarden</a>
+            </label>
+          </div>
+          <button type="submit" class="subscribe-submit-btn">Inschrijven</button>
+        </form>
       </div>
     </div>
   </div>

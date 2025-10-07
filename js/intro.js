@@ -1,7 +1,7 @@
 class IntroScreen {
     
     constructor() {
-        this.introDuration = 3500; 
+        this.introDuration = 4000; 
         this.init();
     }
 
@@ -13,22 +13,7 @@ class IntroScreen {
     }
 
     setupEventListeners() {
-        const skipButton = document.querySelector('.skip-intro');
-        const introScreen = document.querySelector('.intro-screen');
 
-        if (skipButton) {
-            skipButton.addEventListener('click', () => {
-                this.hideIntro();
-            });
-        }
-
-        if (introScreen) {
-            introScreen.addEventListener('click', (e) => {
-                if (e.target === introScreen || e.target.closest('.intro-content')) {
-                    this.hideIntro();
-                }
-            });
-        }
 
         document.addEventListener('keydown', (e) => {
             if (e.key === 'Escape') {
@@ -59,23 +44,7 @@ class IntroScreen {
         }
     }
 
-    addInteractiveElements() {
-        const bgElements = document.querySelector('.intro-bg-elements');
-        
-        if (bgElements) {
-            const elements = ['🥐', '🍞', '☕'];
-            
-            elements.forEach((element, index) => {
-                const floatingEl = document.createElement('div');
-                floatingEl.className = 'floating-element';
-                floatingEl.innerHTML = element;
-                floatingEl.style.fontSize = '2rem';
-                bgElements.appendChild(floatingEl);
-            });
-        }
-
-        this.typewriterEffect();
-    }
+  
 
     typewriterEffect() {
         const subtitle = document.querySelector('.intro-subtitle');
@@ -99,41 +68,7 @@ class IntroScreen {
         }
     }
 
-    triggerMainSiteAnimations() {
-        const heroWrapper = document.querySelector('.hero-wrapper');
-        if (heroWrapper) {
-            heroWrapper.style.opacity = '0';
-            heroWrapper.style.transform = 'translateY(20px)';
-            heroWrapper.style.transition = 'opacity 1s ease-out, transform 1s ease-out';
-            
-            setTimeout(() => {
-                heroWrapper.style.opacity = '1';
-                heroWrapper.style.transform = 'translateY(0)';
-            }, 100);
-        }
 
-        const nav = document.querySelector('nav');
-        if (nav) {
-            nav.style.transform = 'translateY(-100%)';
-            nav.style.transition = 'transform 0.8s ease-out';
-            
-            setTimeout(() => {
-                nav.style.transform = 'translateY(0)';
-            }, 300);
-        }
-
-        const sections = document.querySelectorAll('section');
-        sections.forEach((section, index) => {
-            section.style.opacity = '0';
-            section.style.transform = 'translateY(30px)';
-            section.style.transition = 'opacity 0.8s ease-out, transform 0.8s ease-out';
-            
-            setTimeout(() => {
-                section.style.opacity = '1';
-                section.style.transform = 'translateY(0)';
-            }, 500 + (index * 100));
-        });
-    }
 
     static createIntro() {
         const introHTML = `
@@ -150,7 +85,6 @@ class IntroScreen {
                         <div class="loading-dot"></div>
                     </div>
                 </div>
-                <button class="skip-intro">Skip Intro</button>
             </div>
         `;
         

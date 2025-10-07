@@ -1,4 +1,10 @@
-/* Intro Screen Styles */
+body.intro-active {
+    overflow: hidden;
+    height: 100vh;
+}
+
+
+
 .intro-screen {
     position: fixed;
     top: 0;
@@ -372,8 +378,4 @@
     }
 }
 
-/* Prevent scrolling during intro */
-body.intro-active {
-    overflow: hidden;
-    height: 100vh;
-}
+
