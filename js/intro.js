@@ -1,7 +1,7 @@
 class IntroScreen {
     
     constructor() {
-        this.introDuration = 4000; 
+        this.introDuration = 4000000; 
         this.init();
     }
 
@@ -10,6 +10,7 @@ class IntroScreen {
         this.setupEventListeners();
         this.autoHideIntro();
         this.addInteractiveElements();
+         this.introtagline()
     }
 
     setupEventListeners() {
@@ -44,6 +45,21 @@ class IntroScreen {
         }
     }
 
+     introtagline() {
+       const letter = document.querySelector(".intro-tagline");
+       if(letter) {
+       const text = letter.textContent;
+       letter.textContent = "";
+
+       [...text].forEach((char, ch) => {
+        setTimeout(() => {
+            text.textContent += char;
+        }, ch * 80);
+       });
+     }
+    
+    }
+   
   
 
     typewriterEffect() {
@@ -98,3 +114,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 export default IntroScreen;
+
+
+
