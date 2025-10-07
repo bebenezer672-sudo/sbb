@@ -45,20 +45,7 @@ class IntroScreen {
         }
     }
 
-     introtagline() {
-       const letter = document.querySelector(".intro-tagline");
-       if(letter) {
-       const text = letter.textContent;
-       letter.textContent = "";
-
-       [...text].forEach((char, ch) => {
-        setTimeout(() => {
-            text.textContent += char;
-        }, ch * 80);
-       });
-     }
-    
-    }
+   
    
   
 
