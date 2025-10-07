@@ -2,3 +2,390 @@
    Footer Component
    ========================================================================== */
 
+/* Main Footer */
+footer {
+  background: #f5f5f5;
+  color: #333;
+}
+
+/* Newsletter Section */
+.footer-newsletter {
+  background: #fff;
+  padding: 68px 6%;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.newsletter-content {
+  max-width: 1520px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 85px;
+}
+
+.newsletter-left {
+  flex: 0 0 auto;
+}
+
+.newsletter-title {
+  font-family: 'Playfair Display', 'Poppins', serif;
+  font-size: 3.2rem;
+  font-weight: 400;
+  color: #222;
+  margin: 0;
+  line-height: 1.28;
+  letter-spacing: -0.5px;
+}
+
+.newsletter-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.newsletter-text {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: 1.05rem;
+  font-style: italic;
+  color: #555;
+  line-height: 1.72;
+  margin: 0;
+  max-width: 620px;
+}
+
+.newsletter-form-container {
+  display: flex;
+  gap: 15px;
+  max-width: 520px;
+}
+
+.newsletter-input {
+  flex: 1;
+  padding: 14px 22px;
+  border: 1px solid #d0d0d0;
+  border-radius: 4px;
+  background: #fff;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 0.94rem;
+  color: #333;
+  transition: border-color 0.3s ease;
+  outline: none;
+}
+
+.newsletter-input::placeholder {
+  color: #999;
+}
+
+.newsletter-input:focus {
+  border-color: #f1d88c;
+}
+
+.newsletter-btn {
+  padding: 14px 35px;
+  background: #f1d88c;
+  color: #222;
+  border: none;
+  border-radius: 4px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.96rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.newsletter-btn:hover {
+  background: #e8cc7a;
+  transform: translateY(-2px);
+}
+
+/* Footer Main Content */
+.footer-main {
+  padding: 72px 6% 68px;
+  background: #f5f5f5;
+}
+
+.footer-content {
+  max-width: 1520px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.2fr;
+  gap: 58px;
+}
+
+/* Footer Brand Column */
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.footer-logo {
+  width: 72px;
+  height: auto;
+  margin-bottom: 8px;
+}
+
+.footer-address {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 0.88rem;
+  font-style: normal;
+  line-height: 1.85;
+  color: #666;
+}
+
+.footer-address p {
+  margin: 0 0 4px 0;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.social-icon {
+  width: 38px;
+  height: 38px;
+  border: 1px solid #d0d0d0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  text-decoration: none;
+  font-size: 1.05rem;
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  background: #f1d88c;
+  border-color: #f1d88c;
+  color: #222;
+  transform: translateY(-3px);
+}
+
+/* Footer Columns */
+.footer-column h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.08rem;
+  font-weight: 600;
+  color: #222;
+  margin: 0 0 22px 0;
+  letter-spacing: 0.3px;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 12px;
+}
+
+.footer-links a {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 0.90rem;
+  color: #666;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #f1d88c;
+}
+
+/* Footer Hours & Consult */
+.footer-hours p {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 0.90rem;
+  color: #666;
+  margin: 0 0 8px 0;
+  line-height: 1.68;
+}
+
+.footer-consult {
+  margin-top: 22px;
+}
+
+.consult-text {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 0.90rem;
+  color: #666;
+  margin: 0 0 6px 0;
+}
+
+.consult-phone {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #222;
+  margin: 0;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  background: #e8e8e8;
+  padding: 22px 6%;
+  text-align: center;
+}
+
+.copyright {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 0.82rem;
+  color: #888;
+  margin: 0;
+  letter-spacing: 0.2px;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .newsletter-content {
+    gap: 58px;
+  }
+  
+  .newsletter-title {
+    font-size: 2.8rem;
+  }
+  
+  .footer-content {
+    grid-template-columns: 1.8fr 1fr 1fr 1.2fr;
+    gap: 42px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .newsletter-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 38px;
+  }
+  
+  .newsletter-title {
+    font-size: 2.5rem;
+  }
+  
+  .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 38px;
+  }
+  
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-newsletter {
+    padding: 52px 5%;
+  }
+  
+  .newsletter-title {
+    font-size: 2.1rem;
+  }
+  
+  .newsletter-text {
+    font-size: 0.96rem;
+  }
+  
+  .newsletter-form-container {
+    flex-direction: column;
+    width: 100%;
+    max-width: none;
+  }
+  
+  .newsletter-input,
+  .newsletter-btn {
+    width: 100%;
+  }
+  
+  .footer-main {
+    padding: 58px 5% 52px;
+  }
+  
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+  
+  .footer-brand {
+    grid-column: 1;
+  }
+  
+  .footer-logo {
+    width: 62px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-newsletter {
+    padding: 42px 4%;
+  }
+  
+  .newsletter-title {
+    font-size: 1.78rem;
+  }
+  
+  .newsletter-title br {
+    display: none;
+  }
+  
+  .newsletter-text {
+    font-size: 0.88rem;
+    line-height: 1.62;
+  }
+  
+  .newsletter-input,
+  .newsletter-btn {
+    padding: 12px 18px;
+    font-size: 0.88rem;
+  }
+  
+  .footer-main {
+    padding: 48px 4% 42px;
+  }
+  
+  .footer-content {
+    gap: 32px;
+  }
+  
+  .footer-logo {
+    width: 55px;
+  }
+  
+  .footer-address {
+    font-size: 0.82rem;
+  }
+  
+  .social-icon {
+    width: 35px;
+    height: 35px;
+    font-size: 0.96rem;
+  }
+  
+  .footer-column h4 {
+    font-size: 1.02rem;
+    margin-bottom: 18px;
+  }
+  
+  .footer-links a,
+  .footer-hours p,
+  .consult-text {
+    font-size: 0.84rem;
+  }
+  
+  .consult-phone {
+    font-size: 0.88rem;
+  }
+  
+  .footer-bottom {
+    padding: 18px 4%;
+  }
+  
+  .copyright {
+    font-size: 0.76rem;
+  }
+}

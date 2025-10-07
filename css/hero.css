@@ -121,6 +121,7 @@
   transition: all 0.28s ease;
   font-family: 'Poppins', 'Montserrat', 'Quicksand', Arial, sans-serif;
   font-weight: 600;
+  text-decoration: none;
 }
 
 .cta-button:hover {
