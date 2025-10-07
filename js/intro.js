@@ -1,106 +1,14 @@
-class IntroScreen {
-    
-    constructor() {
-        this.introDuration = 4000000; 
-        this.init();
-    }
-
-    init() {
-        document.body.classList.add('intro-active');
-        this.setupEventListeners();
-        this.autoHideIntro();
-        this.addInteractiveElements();
-         this.introtagline()
-    }
-
-    setupEventListeners() {
+const skip = document.querySelector(".skip-intro");
+const intro = document.querySelector(".intro-screen");
 
 
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape') {
-                this.hideIntro();
-            }
-        });
-    }
-
-    autoHideIntro() {
-        setTimeout(() => {
-            this.hideIntro();
-        }, this.introDuration);
-    }
-
-    hideIntro() {
-        const introScreen = document.querySelector('.intro-screen');
-        
-        if (introScreen && !introScreen.classList.contains('fade-out')) {
-            introScreen.classList.add('fade-out');
-            document.body.classList.remove('intro-active');
-            
-            setTimeout(() => {
-                if (introScreen.parentNode) {
-                    introScreen.parentNode.removeChild(introScreen);
-                }
-                this.triggerMainSiteAnimations();
-            }, 800);
-        }
-    }
-
-   
-   
-  
-
-    typewriterEffect() {
-        const subtitle = document.querySelector('.intro-subtitle');
-        
-        if (subtitle) {
-            const originalText = subtitle.textContent;
-            subtitle.textContent = '';
-            
-            setTimeout(() => {
-                let i = 0;
-                
-                const typeInterval = setInterval(() => {
-                    subtitle.textContent += originalText.charAt(i);
-                    i++;
-                    
-                    if (i >= originalText.length) {
-                        clearInterval(typeInterval);
-                    }
-                }, 50);
-            }, 1500);
-        }
-    }
+skip.addEventListener("click", () => {
+   intro.style.display = "none"
+})
 
 
-
-    static createIntro() {
-        const introHTML = `
-            <div class="intro-screen">
-                <div class="intro-bg-elements"></div>
-                <div class="intro-content">
-                    <img src="image/logo_transparent_white.png" alt="Bristo Bakery Logo" class="intro-logo">
-                    <h1 class="intro-title">BRISTO</h1>
-                    <p class="intro-subtitle">Artisan Bakery & Café Experience</p>
-                    <p class="intro-tagline">Where every bite tells a story of tradition and craftsmanship</p>
-                    <div class="loading-animation">
-                        <div class="loading-dot"></div>
-                        <div class="loading-dot"></div>
-                        <div class="loading-dot"></div>
-                    </div>
-                </div>
-            </div>
-        `;
-        
-        document.body.insertAdjacentHTML('afterbegin', introHTML);
-        return new IntroScreen();
-    }
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-    IntroScreen.createIntro();
-});
-
-export default IntroScreen;
-
+setTimeout(() => {
+     intro.style.display = "none"
+}, 500000)
 
 
