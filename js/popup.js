@@ -40,3 +40,5 @@ subsbtn.addEventListener("click",() => {
 subclose.addEventListener("click", () => {
     subpopup.style.display = "none";
 })
+
+// Chatbot functionaliteit

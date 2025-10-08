@@ -98,6 +98,7 @@ footer {
 .newsletter-btn:hover {
   background: #e8cc7a;
   transform: translateY(-2px);
+  text-decoration: #333;
 }
 
 /* Footer Main Content */
