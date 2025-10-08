@@ -9,7 +9,17 @@ setTimeout(() => {
      intro.classList.add("fade-out");
      
      setTimeout(() => {
-         intro.style.display = "none";
+         
      }, 800);
 }, 3000)
 
+
+
+document.addEventListener("keydown", (e) => {
+  if (e.key) {
+    intro.classList.add("fade-out");
+    setTimeout(() => {
+      intro.style.display = "none";
+    }, 800);
+  }
+});
