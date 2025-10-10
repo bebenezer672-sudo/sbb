@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/menu.base.css">
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/menu.cards.css">
+  <link rel="stylesheet" href="css/cart.css">
   
 <body>
 
@@ -34,9 +35,16 @@
           <ul>
             <li><a href="menu.html" class="menu-btn">Menu</a></li>
             <li><a href="contact.html" class="contact-btn" id="contactOpen">Contact</a></li>
+            <li class="cart-nav-item">
+              <button class="cart-btn" id="cartBtn">
+                🛒
+                <span class="cart-count" id="cartCount">0</span>
+              </button>
+            </li>
           </ul>
         </div>
       </nav>
+     
     </header>
        <main>
         <section class="menu-hero">
@@ -324,6 +332,33 @@
     </section>
 
   </footer>
+
+  <!-- Cart Overlay -->
+  <div class="cart-overlay" id="cartOverlay">
+    <div class="cart-sidebar">
+      <div class="cart-header">
+        <h3 class="cart-title">Your Cart</h3>
+        <button class="cart-close" id="cartClose">&times;</button>
+      </div>
+      
+      <div class="cart-items" id="cartItems">
+        <!-- Cart items will be dynamically added here -->
+        <div class="cart-empty" id="cartEmpty">
+          <p>Your cart is empty</p>
+          <p>Start adding some delicious items!</p>
+        </div>
+      </div>
+      
+      <div class="cart-footer">
+        <div class="cart-total">
+          <span class="total-label">Total: </span>
+          <span class="total-amount" id="totalAmount">€0.00</span>
+        </div>
+        <button class="checkout-btn" id="checkoutBtn">Checkout</button>
+        <button class="clear-cart-btn" id="clearCartBtn">Clear Cart</button>
+      </div>
+    </div>
+  </div>
   
   <script src="js/menu.js"></script>
   <script src="js/intro.js"></script>
