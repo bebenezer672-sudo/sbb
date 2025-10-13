@@ -3,10 +3,9 @@ const prices = document.querySelectorAll(".price");
 let cart = document.querySelector(".cart-count");
 
 let cartcount = 0;
-
-
-const totalAmount = document.querySelector("#totalAmount"); 
 let total = 0;
+
+const totalAmount = document.querySelector("#totalAmount");
 
 buttons.forEach((button, index) => {
   const priceElement = prices[index];
@@ -14,20 +13,20 @@ buttons.forEach((button, index) => {
 
   button.addEventListener("click", () => {
     cartcount++;
-  
-  
-    if(cart){
-      cart.textContent = cartcount
+
+    if (cart) {
+      cart.textContent = cartcount;
+     
+      
     }
 
-    totalAmount.textContent = priceText;
-    const price = parseFloat(priceText.replace('€', ''));  
-    total += price;                                        
-    totalAmount.textContent = "€" + total.toFixed(2);      
+  
+    const price = parseFloat(priceText.replace('€', '').replace(',', '.').trim());
+
+    total += price;
+    totalAmount.textContent = "€" + total.toFixed(2);
   });
 });
-
-
 
 
 
@@ -48,7 +47,7 @@ const clearCartBtn = document.querySelector(".clear-cart-btn");
 clearCartBtn.addEventListener("click", () => {
   cartcount = 0;
   
-     totalAmount.textContent = 0.00;
+     totalAmount.textContent = "0.00";
     cart.textContent = cartcount
    
 });
@@ -65,9 +64,6 @@ cartBtn.addEventListener("click", () => {
 cartClose.addEventListener("click", ()=> {
      cartOverlay.classList.remove("active"); 
 });
-
-
-
 
 
 
