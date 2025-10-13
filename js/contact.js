@@ -11,3 +11,5 @@ verstuurd.addEventListener("click", () => {
   }
 })
 
+
+const sub = document.querySelector(".popup-content")

@@ -2,12 +2,11 @@
    Global Styles - Site-wide reusable components and utilities
    ========================================================================== */
 
-/* List items - Global list styling */
 li {
   list-style: none;
 } 
 
-/* Link styling - Global anchor styles */
+
 li a {
   text-decoration: none;
   font-weight: 500;
@@ -15,7 +14,7 @@ li a {
   transition: color 0.3s ease;
 }
 
-/* Button styles - Reusable button classes */
+
 .btn {
   font-family: 'Poppins', 'Montserrat', 'Quicksand', Arial, sans-serif;
   font-weight: 500;
@@ -32,7 +31,7 @@ li a {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* Utility classes */
+
 .text-center {
   text-align: center;
 }
@@ -41,4 +40,7 @@ li a {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+a {
+  text-decoration: none;
 }

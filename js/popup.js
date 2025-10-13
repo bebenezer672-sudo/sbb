@@ -29,16 +29,5 @@ closeBtn.addEventListener("click", () => {
 
 
 
-const subsbtn = document.querySelector("#subscribeBtn");
-const subpopup = document.querySelector("#subscribePopup");
-const subclose = document.querySelector("#subscribeCloseBtn");
-
-subsbtn.addEventListener("click",() => {
-    subpopup.style.display = "flex";
-})
-
-subclose.addEventListener("click", () => {
-    subpopup.style.display = "none";
-})
 
 // Chatbot functionaliteit

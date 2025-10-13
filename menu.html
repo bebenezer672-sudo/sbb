@@ -11,6 +11,10 @@
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/menu.cards.css">
   <link rel="stylesheet" href="css/cart.css">
+  <link rel="stylesheet" href="css/popup.css">
+  
+  
+
   
 <body>
 
@@ -56,17 +60,17 @@
 
         <section class="menu-categories">
           <div class="category-tabs">
-            <button class="category-tab active" data-category="all">All Items</button>
-            <button class="category-tab" data-category="bread">Fresh Bread</button>
-            <button class="category-tab" data-category="pastries">Pastries</button>
-            <button class="category-tab" data-category="breakfast">Breakfast</button>
-            <button class="category-tab" data-category="drinks">Drinks</button>
+            <a href="#all-items" class="category-tab active">All Items</a>
+            <a href="#bread-section" class="category-tab">Fresh Bread</a>
+            <a href="#pastries-section" class="category-tab">Pastries</a>
+            <a href="#breakfast-section" class="category-tab">Breakfast</a>
+            <a href="#drinks-section" class="category-tab">Drinks</a>
           </div>
         </section>
 
-        <section class="menu-section">
+        <section class="menu-section" id="all-items">
           <!-- Bread Section -->
-          <div class="menu-category-section" data-category="bread">
+          <div class="menu-category-section" data-category="bread" id="bread-section">
             <h2 class="category-title">Fresh Bread</h2>
             <div class="menu-cards">
               <div class="menu-card" data-category="bread">
@@ -114,7 +118,7 @@
           </div>
 
           <!-- Pastries Section -->
-          <div class="menu-category-section" data-category="pastries">
+          <div class="menu-category-section" data-category="pastries" id="pastries-section">
             <h2 class="category-title">Pastries & Desserts</h2>
             <div class="menu-cards">
               <div class="menu-card" data-category="pastries">
@@ -162,7 +166,7 @@
           </div>
 
           <!-- Breakfast Section -->
-          <div class="menu-category-section" data-category="breakfast">
+          <div class="menu-category-section" data-category="breakfast" id="breakfast-section">
             <h2 class="category-title">Breakfast Specials</h2>
             <div class="menu-cards">
               <div class="menu-card" data-category="breakfast">
@@ -210,7 +214,7 @@
           </div>
 
           <!-- Drinks Section -->
-          <div class="menu-category-section" data-category="drinks">
+          <div class="menu-category-section" data-category="drinks" id="drinks-section">
             <h2 class="category-title">Beverages</h2>
             <div class="menu-cards">
               <div class="menu-card" data-category="drinks">
@@ -270,7 +274,7 @@
           <p class="newsletter-text">"Stay up-to-date with the latest news, promotions, and exclusive offers! Subscribe to our newsletter now."</p>
           <div class="newsletter-form-container">
             <input type="email" class="newsletter-input" placeholder="Email" required>
-            <button type="submit" class="newsletter-btn">Subscribe</button>
+            <button type="submit" class="newsletter-btn" id="subscribeBtn">Subscribe</button>
           </div>
         </div>
       </div>
@@ -348,7 +352,7 @@
           <p>Start adding some delicious items!</p>
         </div>
       </div>
-      
+
       <div class="cart-footer">
         <div class="cart-total">
           <span class="total-label">Total: </span>
@@ -360,7 +364,22 @@
     </div>
   </div>
   
-  <script src="js/menu.js"></script>
+  <!-- Subscribe Popup -->
+  <div id="subscribePopup" class="popup subscribe-popup">
+    <div class="popup-content subscribe-popup-content">
+      <h2>Gelukt !!</h2>
+      <h2> You are Subscribe to Our Newsletter</h2>
+    </div>
+  </div>
+  
+   <script src="script.js" type="module"></script>
+  <script src="js/footer.js"></script>
+  
+  <script src="js/popup.js"></script>
+  <script src="js/why-dine.js"></script>
   <script src="js/intro.js"></script>
-</body>
+
+   <script src="js/menu.js"></script>
+ 
+  </body>
 </html>
