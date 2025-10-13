@@ -64,7 +64,7 @@ textarea {
 }
 
 main{
-     min-height: 100vh;
+     min-height: 50vh;
 }
 
 .verstuurd:hover {
@@ -77,7 +77,7 @@ main{
     display: flex;
     width: 100%;
     justify-content: center;
-    min-height: 100vh;
+    min-height: 50vh;
    
 }
 
