@@ -166,6 +166,33 @@ footer {
   display: flex;
   gap: 12px;
   margin-top: 8px;
+  list-style: none;
+  padding: 0;
+}
+
+.footer-socials li {
+  margin: 0;
+}
+
+.footer-socials a {
+  width: 38px;
+  height: 38px;
+  border: 1px solid #d0d0d0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  text-decoration: none;
+  font-size: 1.05rem;
+  transition: all 0.3s ease;
+}
+
+.footer-socials a:hover {
+  background: #f1d88c;
+  border-color: #f1d88c;
+  color: #222;
+  transform: translateY(-3px);
 }
 
 .social-icon {
@@ -396,6 +423,7 @@ footer {
     font-size: 0.82rem;
   }
   
+  .footer-socials a,
   .social-icon {
     width: 35px;
     height: 35px;
