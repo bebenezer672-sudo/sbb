@@ -1,0 +1,14 @@
+body{
+      background: linear-gradient(135deg, rgba(18, 48, 28, 0.92) 0%, rgba(15, 38, 22, 0.88) 100%);
+}
+
+
+.title-section {
+  color: white;
+  font-size: 79px;
+  font-weight: 300;
+  margin: 0;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.35);
+}
+
+

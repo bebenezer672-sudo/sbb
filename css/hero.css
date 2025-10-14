@@ -111,6 +111,7 @@
   transition: all 0.28s ease;
   font-family: 'Poppins', 'Montserrat', 'Quicksand', Arial, sans-serif;
   font-weight: 600;
+  text-decoration: none;
 }
 
 .cta-button:hover {
@@ -277,3 +278,66 @@
     padding: 28px 18px;
   }
 }
+
+/* 
+.chatbot-section {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.chatbot-btn {
+  background: #ff6b35;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.chat-window {
+  width: 300px;
+  height: 400px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  display: none; /* Verborgen totdat chat wordt geopend */
+/* }
+
+.chat-messages {
+  height: 320px;
+  padding: 15px;
+  overflow-y: auto;
+  border-bottom: 1px solid #eee;
+}
+
+.bot-message {
+  background: #f5f5f5;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.chat-input {
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.chat-input button {
+  background: #ff6b35;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+} */ 
