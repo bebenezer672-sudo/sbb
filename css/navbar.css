@@ -377,7 +377,14 @@
     display: flex;
   }
   
-  .nav-right ul {
+  .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  /* Hide menu and contact buttons, but keep cart */
+  .nav-right ul li:not(.cart-nav-item) {
     display: none;
   }
   

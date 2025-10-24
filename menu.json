@@ -1,0 +1,166 @@
+{
+  "categories": {
+    "bread": {
+      "title": "Fresh Bread",
+      "description": "Artisan breads baked fresh daily"
+    },
+    "pastries": {
+      "title": "Pastries & Desserts", 
+      "description": "Sweet treats and delicious pastries"
+    },
+    "breakfast": {
+      "title": "Breakfast Specials",
+      "description": "Start your day right with our breakfast items"
+    },
+    "drinks": {
+      "title": "Beverages",
+      "description": "Fresh drinks and hot beverages"
+    }
+  },
+  "menu": [
+    {
+      "id": 1,
+      "name": "Artisan Sourdough",
+      "category": "bread",
+      "price": "€1.00",
+      "priceNumeric": 1.00,
+      "description": "Traditional sourdough with a crispy crust and soft interior",
+      "image": "image/man-bakker-met-vers-brood-bij-bakkershuis_1303-32273.jpg",
+      "alt": "Sourdough Bread",
+      "available": true,
+      "popular": false
+    },
+    {
+      "id": 2,
+      "name": "Whole Wheat Bread",
+      "category": "bread",
+      "price": "€3.80",
+      "priceNumeric": 3.80,
+      "description": "Healthy whole wheat bread packed with nutrients",
+      "image": "image/gallery-item3.jpg",
+      "alt": "Whole Wheat Bread",
+      "available": true,
+      "popular": false
+    },
+    {
+      "id": 3,
+      "name": "French Baguette",
+      "category": "bread",
+      "price": "€2.20",
+      "priceNumeric": 2.20,
+      "description": "Classic French baguette with authentic taste",
+      "image": "image/gallery-item7.jpg",
+      "alt": "French Baguette",
+      "available": true,
+      "popular": true
+    },
+    {
+      "id": 4,
+      "name": "Butter Croissants",
+      "category": "pastries",
+      "price": "€2.80",
+      "priceNumeric": 2.80,
+      "description": "Flaky, buttery croissants made fresh daily",
+      "image": "image/baker-holding-metal-tray-full-fresh-croissants-illuminated-with-lovely-light-from-window-ai-generative.jpg",
+      "alt": "Fresh Croissants",
+      "available": true,
+      "popular": true
+    },
+    {
+      "id": 5,
+      "name": "Chocolate Cake",
+      "category": "pastries",
+      "price": "€5.50",
+      "priceNumeric": 5.50,
+      "description": "Rich chocolate cake with premium cocoa",
+      "image": "image/front-view-delicious-chocolate-concept.jpg",
+      "alt": "Chocolate Cake",
+      "available": true,
+      "popular": false
+    },
+    {
+      "id": 6,
+      "name": "Danish Pastry",
+      "category": "pastries",
+      "price": "€3.20",
+      "priceNumeric": 3.20,
+      "description": "Sweet Danish pastry with fruit filling",
+      "image": "image/gallery-item2.jpg",
+      "alt": "Danish Pastry",
+      "available": true,
+      "popular": false
+    },
+    {
+      "id": 7,
+      "name": "Fluffy Pancakes",
+      "category": "breakfast",
+      "price": "€8.50",
+      "priceNumeric": 8.50,
+      "description": "Stack of fluffy pancakes with maple syrup",
+      "image": "image/Super-Fluffy-pancakes-7.jpg",
+      "alt": "Fluffy Pancakes",
+      "available": true,
+      "popular": true
+    },
+    {
+      "id": 8,
+      "name": "Brioche French Toast",
+      "category": "breakfast",
+      "price": "€7.80",
+      "priceNumeric": 7.80,
+      "description": "Golden brioche French toast with fresh berries",
+      "image": "image/brioche-french-toast-9.jpg",
+      "alt": "French Toast",
+      "available": true,
+      "popular": false
+    },
+    {
+      "id": 9,
+      "name": "Breakfast Platter",
+      "category": "breakfast",
+      "price": "€12.50",
+      "priceNumeric": 12.50,
+      "description": "Complete breakfast with eggs, bacon, and toast",
+      "image": "image/maak-iemand-super-blij-met-een-ontbijtverrassing-282856.webp",
+      "alt": "Breakfast Platter",
+      "available": true,
+      "popular": false
+    },
+    {
+      "id": 10,
+      "name": "Artisan Coffee",
+      "category": "drinks",
+      "price": "€3.50",
+      "priceNumeric": 3.50,
+      "description": "Freshly brewed coffee from premium beans",
+      "image": "image/gallery-item4.jpg",
+      "alt": "Fresh Coffee",
+      "available": true,
+      "popular": true
+    },
+    {
+      "id": 11,
+      "name": "Fresh Orange Juice",
+      "category": "drinks",
+      "price": "€4.20",
+      "priceNumeric": 4.20,
+      "description": "100% fresh squeezed orange juice",
+      "image": "image/gallery-item6.jpg",
+      "alt": "Fresh Juice",
+      "available": true,
+      "popular": false
+    },
+    {
+      "id": 12,
+      "name": "Hot Chocolate",
+      "category": "drinks",
+      "price": "€4.80",
+      "priceNumeric": 4.80,
+      "description": "Rich hot chocolate with whipped cream",
+      "image": "image/gallery-item8.jpg",
+      "alt": "Hot Chocolate",
+      "available": true,
+      "popular": false
+    }
+  ]
+}
